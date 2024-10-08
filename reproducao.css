@@ -1,0 +1,78 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+} */
+
+body{
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    position: relative;             /* necessario para o posicionamento absoluto */
+}
+
+.progress-container{
+    width: 100%;
+    background: #ddd;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+/* .progress{
+    width: 0%;    
+    height: 5px;    
+    background: green;
+    border-radius: 5px;
+} */
+
+.conteiner-player{
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        max-width: 400px;
+        margin: auto;
+        position: relative; /* Para manter o contexto do posicionamento absoluto */
+        float: left; /* Faz o contêiner flutuar à esquerda */
+    }
+
+.song-info{
+    margin: 10px 0;
+}
+
+.controls{
+    /* display: flex; */
+    justify-content: center; 
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button{
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover{
+    background-color:  blue;
+}
+
+.lyrics{
+    background-color: purple;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px red;
+    max-width: 600px;     /* Limitar a largura das letras */
+    line-height: 1.5;  
+    position: absolute;     /* posicionar a letra de forma absoluta */
+    right: -550px;      /* ajuste conforme necessário para sair do conteiner */
+    top: 20px;         /* ajuste a posição vertical conforme necessário */
+}
+
+.lyrics p{
+    margin: 5px 0;    /* Adicione espaço entre as linhas */
+}

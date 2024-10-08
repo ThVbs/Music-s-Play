@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #8b6189c7;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+.artist-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.artist {
+    background-color: #2c2c2c;
+    border-radius: 15px;
+    margin: 30px;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    /* border-radius: 60%; */
+}
+
+.artist-escolhidos{
+    text-align: center;
+    margin-right: 70px; 
+}
+
+.playlists {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 70px;
+} 
+
+.favorites{
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+img{
+    width: 100%;
+}
+
+.imagem-redonda{
+    width: 150px;     /* define a largura desejada */
+    height: 150px;     /* mantenha a altura igual á largura para um formato circular */
+    border-radius: 50%;     /* Isso torna a imagem redonda */
+    object-fit: cover;      /* Isso ajuda a cobrir o espaço sem distorcer a imagem */
+}
+
+.container-artist{
+    display: flex;
+    gap: 10px;
+}
+
+.container-img{
+    width: 150px;
+    height: auto;
+}
