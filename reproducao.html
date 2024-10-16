@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reprodução</title>
     <link rel="stylesheet" href="reproducao.css">
+
 </head>
 <body>
+
+    <form action="/reproducao" method="post">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="M765-144 526-383q-30 22-65.79 34.5-35.79 12.5-76.18 12.5Q284-336 214-406t-70-170q0-100 70-170t170-70q100 0 170 70t70 170.03q0 40.39-12.5 76.18Q599-464 577-434l239 239-51 51ZM384-408q70 0 119-49t49-119q0-70-49-119t-119-49q-70 0-119 49t-49 119q0 70 49 119t119 49Z"/></svg>
+        <input type="text" name="pesquisar" placeholder="Pesquisar" required>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=settings" />
 
     <div class="progress-container">
         <div class="progress"></div>
@@ -17,20 +23,25 @@
         <div class="song-info">
           <h1>Baby ft. Ludacris</h1>
           <p>Justin Bieber</p>
-          <img src="imagens/img_justin bieber.jpg" alt="Justin Bieber" width="150" height="150" style="border-radius: 50%;"/>  <!-- Replace with actual image -->
+          <br>
+          <img src="imagens/img_justin bieber.jpg" alt="Justin Bieber" width="150" height="150" style="border-radius: 50%;"/>
         </div>
     
         <div class="controls">
             <button id="prev">&lt;</button>
             <button id="play">▶</button>
             <button id="next">&gt;</button> 
+            <br>
+            <br>
+            <audio controls>
+                <source src="/musica/ytmp3.co.za - Justin Bieber - Baby ft. Ludacris.mp3" type="audio/mpeg" >
+            </audio>
         </div>
     </div>
-
-        <div class="lyrics">
+         <div class="lyrics">
           <p>Said, "There's another (yo), and looked right in my eyes (uh-huh)</p>
           <p>My first love broke my heart for the first time, and I was like (yo) uh-huh</p>
-          <p>"Baby, baby, baby oh"</p>
+          <h4>"Baby, baby, baby oh"</h4>
           <p>Like, "Baby, baby, baby no"</p>
           <p>Like, "Baby, baby, baby oh"</p>
           <p>I thought you'd always be mine, mine</p>
