@@ -35,7 +35,8 @@ p{
 input[type="text"],
 input[type="email"],
 input[type="date"],
-input[type="password"] {
+input[type="password"]
+input[type="number"]{
     padding: 15px;
     width: 40%;
     margin-right: 50px;
