@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="login-container">  <!-- Colocar quadrado -->
+        <h1>Music's Play</h1>
+        <form action="/login" method="post">
+            <p>Login</p>
+            <br>
+            <input type="text" name="usuario" placeholder="Usuário" required>
+            <br>
+            <input type="password" name="senha" placeholder="Senha" required>
+            <div class="forgot-password">
+                <br>
+                <a href="esqueciSenha.html">Esqueci a Senha</a>
+            </div>
+            <br>
+            <button type="button" id="botaoAcessar" onclick="window.location.href='home.html';">Acessar</button>
+            <br>
+            <br>
+            <a href="cadastro.html">Não possui cadastro</a>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html> 

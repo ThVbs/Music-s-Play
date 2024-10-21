@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title> 
+    <link rel="stylesheet" href="cadastro.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="conteiner-inscricao">
+        <h1>Music's play</h1>
+        <h2>Efetuar Cadastro</h2>
+        <p>Digite seus dados para se cadastrar na plataforma</p>
+        <br>
+        <form action="/cadastrar" method="post">
+            <input type="text" name="nome" placeholder="Nome" required>
+            <input type="text" name="Sobrenome" placeholder="Sobrenome" required>
+            <input type="date" name="Data de nascimento dd/mm/aaaa" placeholder="Data de nascimento dd/mm/aaaa" required>
+            <input type="number" name="CPF" placeholder="CPF" required>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <input type="email" name="confirmar_email" placeholder="Confirma e-mail" required>
+            <input type="password" name="senha" placeholder="Senha" required>
+            <input type="password" name="confirmar_senha" placeholder="Confirma Senha" required>
+            <button type="button" id="botaoBranco" onclick="window.location.href='login.html';">Cancelar</button>
+            <button type="submit" id="botaoVerde" onclick="window.location.href='login.html';">Acessar</button>
+            </form>
+    </div>
+</body>
+</html>

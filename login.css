@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-style: italic;
+    font-weight: bold;
+    background-color: #5d5bc0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: #bb1c1c;
+    font-family: "Oleo Script Swash Caps", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.login-container{
+    background-color: #acacaca9;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 90px;
+    width: 350px;
+    text-align: center;
+}
+
+p{
+    color: white;
+}
+
+a{
+    color: white;
+}
+
+button{
+    background-color: #616161;
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+    width: 100px;
+}
+
+button:hover {
+    background-color: #7ea172; /* Mudar a cor qnd passar o mouse por cima */
+}
+
+input{
+    border-radius: 30px;
+    padding: 5px;
+    font-weight: bold;
+}
