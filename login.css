@@ -48,11 +48,11 @@ button{
 }
 
 button:hover {
-    background-color: #7ea172; /* Mudar a cor qnd passar o mouse por cima */
+    background-color: #a2bc94; /* Mudar a cor qnd passar o mouse por cima */
 }
 
 input{
     border-radius: 30px;
     padding: 5px;
     font-weight: bold;
-}
+} 
