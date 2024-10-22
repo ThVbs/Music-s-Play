@@ -138,8 +138,8 @@ input{
 
 .imagem-esquerda {
     float: left;
-    width: 30px; /* Ajuste o valor conforme necessário */
+    width: 40px; /* Ajuste o valor conforme necessário */
     margin-right: 10px;
     display: block; /* Faz a imagem ocupar toda a largura da linha */
-    margin-top: 75px; /* Adiciona espaço acima da imagem */
+    margin-top: 15px; /* Adiciona espaço acima da imagem */
   }

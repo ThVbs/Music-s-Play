@@ -13,14 +13,14 @@ body{
 }
 
 .progress-container{
-    width: 100%;
+    width: 200%;
     background: #ddd;
     border-radius: 5px;
     margin: 20px 0;  
 }
 
 .conteiner-player{
-        background-color: #979393;
+        background-color: #acacaca9;
         border-radius: 20px;
         padding: 20px;
         max-width: 400px;
@@ -72,15 +72,16 @@ button:hover{
     padding: 20px;
     line-height: 1.5;  
     position: absolute;     /* posicionar a letra de forma absoluta */
-    right: 140px;      /* alinhar para esquerda */
+    right: 190px;      /* alinhar para esquerda */
     top: 200px;         /* deixar no meio */
     color: white;
 }
 
 .lyrics p{
     margin: 17px 0;    /* Adicione espaço entre as linhas */
-    color: #979393;
+    color: #a1a0a0;
     font-style: italic;
+    margin-top:auto;
 }
 
 input{
