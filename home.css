@@ -121,6 +121,11 @@ input{
     justify-content: space-around;
     padding: 10px;
 }
+.img-arredondada{
+    border-radius: 50%; /* Arredonda a imagem */
+    width: 35px; /* Ajuste conforme necessário */
+    height: 35px; /* Para manter a proporção, use o mesmo valor que a largura */
+}
 
 .icon{
     display: block;
@@ -130,3 +135,11 @@ input{
     font-size: 24px;
     margin: 0px;
 }
+
+.imagem-esquerda {
+    float: left;
+    width: 30px; /* Ajuste o valor conforme necessário */
+    margin-right: 10px;
+    display: block; /* Faz a imagem ocupar toda a largura da linha */
+    margin-top: 75px; /* Adiciona espaço acima da imagem */
+  }
