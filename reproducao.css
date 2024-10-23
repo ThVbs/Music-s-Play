@@ -14,6 +14,7 @@ body {
     margin: 0;
 }
 
+<<<<<<< HEAD
 .player{
     background-color: #fff;
     border-radius: 10px;
@@ -29,6 +30,27 @@ body {
 }
 
 .song-infor{
+=======
+.progress-container{
+    width: 200%;
+    background: #ddd;
+    border-radius: 5px;
+    margin: 20px 0;  
+}
+
+.conteiner-player{
+        background-color: #acacaca9;
+        border-radius: 20px;
+        padding: 20px;
+        max-width: 400px;
+        margin-left: auto;
+        position: relative; /* Para manter o contexto do posicionamento absoluto */
+        float: left; /* Faz o contêiner flutuar à esquerda */
+        margin-top: 20px;
+    }
+
+.song-info{
+>>>>>>> f94dee175bd8aac56b8af7eb8e9a1a1a5ca90694
     text-align: center;
 }
 
@@ -127,6 +149,7 @@ input[type="range"] {
     margin: auto;
     background-color: #3a3f47;
     border-radius: 10px;
+<<<<<<< HEAD
     padding: 20px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
@@ -202,13 +225,48 @@ input[type="range"] {
     display: flex;
     align-items: center;
     margin: 10px 0;
+=======
+    cursor: pointer;
+    font-size: 13px;
+    transition: background-color 0.3s;
+    margin-left: 14%;   
+}
+
+button:hover{
+    background-color:  blue;
+}
+
+.lyrics{
+    padding: 20px;
+    line-height: 1.5;  
+    position: absolute;     /* posicionar a letra de forma absoluta */
+    right: 190px;      /* alinhar para esquerda */
+    top: 200px;         /* deixar no meio */
+>>>>>>> f94dee175bd8aac56b8af7eb8e9a1a1a5ca90694
     color: white;
     text-decoration: none;
 }
 
+<<<<<<< HEAD
 .barra-lateral img {
     border-radius: 50%;
     width: 30px;
     height: 30px;
     margin-left: 10px;
 } */
+=======
+.lyrics p{
+    margin: 17px 0;    /* Adicione espaço entre as linhas */
+    color: #a1a0a0;
+    font-style: italic;
+    margin-top:auto;
+}
+
+input{
+    margin-top: 15px;
+    border-radius: 9%;
+    font-size: 18px;
+    color: #333;
+    line-height: 11px;
+}
+>>>>>>> f94dee175bd8aac56b8af7eb8e9a1a1a5ca90694
