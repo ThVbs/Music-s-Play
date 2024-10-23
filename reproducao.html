@@ -3,49 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reprodução</title>
+    <title>Music Player</title>
     <link rel="stylesheet" href="reproducao.css">
-
 </head>
 <body>
 
-    <form action="/reproducao" method="post">
-        
-    <div class="progress-container">
-        <div class="progress"></div>
-    </div>
-
-    <div class="container"></div>
-    <div class="conteiner-player">
-        <div class="song-info">
-          <h1>Baby ft. Ludacris</h1>
-          <p>Justin Bieber</p>
-          <br>
-          <img src="imagens/img_justin bieber.jpg" alt="Justin Bieber" width="150" height="150" style="border-radius: 50%;"/>
+    <div class="player">
+        <div class="header">
+            <i class="fas fa-chevron-left"></i>
+            <i class="fas fa-search"></i>
+            </div>
+            <div class="album-art">
+                <img src="imagens/img_justin bieber.jpg" alt="">
+                <div class="user-icon">
+                <i class="fas fa-user"></i>
+            </div>
         </div>
-    
-        <div class="controls">
+        <div class="song-info">
+            <h2>Baby ft. Ludacris</h2>
+            <p>Justin Bieber</p>
+            </div>
+            <!-- <div class="controls">
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-play" id="play-pause"></i>
+                <i class="fas fa-step-forward"></i>
+            </div> -->
+            <div class="progress-bar">
+                <input type="range" min="0" max="100" value="0" id="progress">
+            </div>
+            <div class="up-next">
             <button id="prev">&lt;</button>
             <button id="play">▶</button>
             <button id="next">&gt;</button> 
-            <br>
-            <br>
-            <audio controls>
+            </div>
+
+            <!-- <audio controls>
                 <source src="/musica/ytmp3.co.za - Justin Bieber - Baby ft. Ludacris.mp3" type="audio/mpeg" >
             </audio>
-        </div>
-    </div>
-         <div class="lyrics">
-          <p>Said, "There's another (yo), and looked right in my eyes (uh-huh)</p>
-          <p>My first love broke my heart for the first time, and I was like (yo) uh-huh</p>
-          <h4>"Baby, baby, baby oh"</h4>
-          <p>Like, "Baby, baby, baby no"</p>
-          <p>Like, "Baby, baby, baby oh"</p>
-          <p>I thought you'd always be mine, mine</p>
-        </div>
-      </div>
+        </div> -->
 
-      <script class="script.js"></script>
-      
+        <div class="barra-lateral">
+            <a href="#" class="icon"><i class="fas fa-perfil"></i>
+                <img src="imagens/nicolas.jpeg" alt="" class="img-arredondada"> 
+            </a>
+    
+            <a href="#" class="icon"><i class="fas fa-home"></i>
+                <img src="imagens/img_homePurple.jpg.png" alt="">
+            </a>
+    
+            <a href="#" class="icon"><i class="fas fa-user"></i>
+            <img src="imagens/img_user.jpg.png" alt="">
+        </a>
+    
+            <a href="#" class="icon"><i class="fas fa-coracao"></i>
+            <img src="imagens/img_coracao.jpg.png" alt="">
+        </a>
+    
+            <a href="#" class="icon"><i class="fas fa-play"></i>
+            <img src="imagens/img_play.jpg.png" alt="">
+        </a>
+    
+        </div>
+
+    <script src="reproducao.js"></script>
+    
 </body>
 </html>

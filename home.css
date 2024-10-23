@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #5d5bc0;
+    background-color: #adacc7;
     color: white;
     font-family: Arial, sans-serif;
     display: flex;
@@ -34,7 +34,7 @@ h1 {
     cursor: pointer;
     /* border-radius: 60%; */
 }
-
+ 
 .artist-escolhidos{
     text-align: center;
     margin-right: 70px; 
@@ -110,32 +110,42 @@ input{
 
 }
 
-.barra-lateral{
+.barra-lateral {
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
-    width: 30px;
-    background-color: #333333b2;
+    width: 60px; /* Slightly wider for better spacing */
+    background-color: rgba(51, 51, 51, 0.8); /* Added transparency */
     display: flex;
     flex-direction: column; 
     justify-content: space-around;
-    padding: 10px;
-}
-.img-arredondada{
-    border-radius: 50%; /* Arredonda a imagem */
-    width: 35px; /* Ajuste conforme necessário */
-    height: 35px; /* Para manter a proporção, use o mesmo valor que a largura */
+    padding: 15px 0; /* Added padding for better spacing */
 }
 
-.icon{
-    display: block;
-    text-align: center;
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center icons and images */
     color: white;
     text-decoration: none;
     font-size: 24px;
-    margin: 0px;
+    transition: background-color 0.3s; /* Smooth background change */
 }
+
+.icon img {
+    width: 35px; /* Consistent image width */
+    height: 35px; /* Consistent image height */
+    border-radius: 50%; /* Round images */
+    margin-bottom: 5px; /* Space between icon and image */
+}
+
+.icon:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Light hover effect */
+    border-radius: 10px; /* Slightly round corners on hover */
+    padding: 5px; /* Add padding on hover for effect */
+}
+
 
 .imagem-esquerda {
     float: left;
