@@ -54,8 +54,8 @@ h1 {
     padding: 10px; /* Preenchimento interno */
     color: white; /* Cor do texto */
     border-radius: 5px; /* Bordas arredondadas */
+    text-align: center;
 }
-
 img {
     width: 100%;
 }
@@ -151,6 +151,12 @@ input {
     margin-bottom: 10px;
     font-size: 1.2em;
     line-height: 1.6;
+    text-align: center;
+    padding-top: 5px; /* Adiciona espaço acima do texto */
+    margin-left: 10px; /* Aumenta a distância à esquerda */
+    margin-right: 10px; /* Aumenta a distância à direita */
+    letter-spacing: -0.12px; /* Ajusta o espaçamento entre letras */
+  
 }
 
 .artistt img {
@@ -167,8 +173,3 @@ input {
     font-size: 16px; /* Tamanho da fonte */
     transition: border-color 0.2s; /* Transição suave na mudança de cor */
 }
-
-/* .search-input:focus {
-    border-color: #5d5bc0; /* Cor da borda ao focar */
-    /* outline: none; Remove o contorno padrão do foco } */
-
