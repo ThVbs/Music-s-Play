@@ -14,7 +14,7 @@ body {
     margin: 0;
 }
 
-<<<<<<< HEAD
+
 .player{
     background-color: #fff;
     border-radius: 10px;
@@ -29,8 +29,7 @@ body {
     border-radius: 10px;
 }
 
-.song-infor{
-=======
+
 .progress-container{
     width: 200%;
     background: #ddd;
@@ -50,7 +49,6 @@ body {
     }
 
 .song-info{
->>>>>>> f94dee175bd8aac56b8af7eb8e9a1a1a5ca90694
     text-align: center;
 }
 
@@ -125,148 +123,3 @@ input[type="range"] {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-/* body {
-    font-family: Arial, sans-serif;
-    background-color: #5d5bc0;
-    color: white;
-    margin: 0;
-    padding: 0;
-}
-
-.player {
-    max-width: 400px;
-    margin: auto;
-    background-color: #3a3f47;
-    border-radius: 10px;
-<<<<<<< HEAD
-    padding: 20px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.album-art {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0;
-}
-
-.album-art img {
-    border-radius: 10px;
-    width: 100%;
-    max-width: 200px;
-}
-
-.user-icon {
-    margin-top: 10px;
-}
-
-.song-info {
-    text-align: center;
-}
-
-.controls {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-}
-
-.controls i,
-.controls button {
-    font-size: 24px;
-    margin: 0 10px;
-    cursor: pointer;
-    color: #61dafb;
-}
-
-.progress-bar {
-    width: 100%;
-    margin: 20px 0;
-}
-
-input[type="range"] {
-    width: 100%;
-    cursor: pointer;
-}
-
-.up-next {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.barra-lateral {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    left: 10px;
-    top: 20px;
-    background-color: #3a3f47;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-.barra-lateral .icon {
-    display: flex;
-    align-items: center;
-    margin: 10px 0;
-=======
-    cursor: pointer;
-    font-size: 13px;
-    transition: background-color 0.3s;
-    margin-left: 14%;   
-}
-
-button:hover{
-    background-color:  blue;
-}
-
-.lyrics{
-    padding: 20px;
-    line-height: 1.5;  
-    position: absolute;     /* posicionar a letra de forma absoluta */
-    right: 190px;      /* alinhar para esquerda */
-    top: 200px;         /* deixar no meio */
->>>>>>> f94dee175bd8aac56b8af7eb8e9a1a1a5ca90694
-    color: white;
-    text-decoration: none;
-}
-
-<<<<<<< HEAD
-.barra-lateral img {
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    margin-left: 10px;
-} */
-=======
-.lyrics p{
-    margin: 17px 0;    /* Adicione espaço entre as linhas */
-    color: #a1a0a0;
-    font-style: italic;
-    margin-top:auto;
-}
-
-input{
-    margin-top: 15px;
-    border-radius: 9%;
-    font-size: 18px;
-    color: #333;
-    line-height: 11px;
-}
->>>>>>> f94dee175bd8aac56b8af7eb8e9a1a1a5ca90694

@@ -31,17 +31,15 @@ h1 {
     padding: 10px; 
     width: 150px;
     text-align: center;
-<<<<<<< HEAD
     cursor: pointer;
     /* border-radius: 60%; */
 }
  
-.artist-escolhidos{
-=======
-}
+/* .artist-escolhidos{
+
+} */
 
 .artist-escolhidos {
->>>>>>> f94dee175bd8aac56b8af7eb8e9a1a1a5ca90694
     text-align: center;
     margin-right: 70px;
 }
@@ -54,15 +52,16 @@ h1 {
 }
 
 .favorites {
-    position: fixed; /* Mantém o container fixo na tela */
-    top: 20px; /* Distância do topo */
-    right: 20px; /* Distância da borda direita */
-    width: 220px; /* Largura do container */
-    background-color: #2c2c2c; /* Cor de fundo */
-    padding: 10px; /* Preenchimento interno */
-    color: white; /* Cor do texto */
-    border-radius: 5px; /* Bordas arredondadas */
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 220px;
+    background-color: #7d7171fc;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
     text-align: center;
+    border-radius: 10 10 40px 40px; /* Arredonda os dois cantos inferiores (as duas partes de baixo de um quadrado éb os dois número no final */
 }
 img {
     width: 100%;
@@ -127,7 +126,6 @@ input {
     display: flex;
     flex-direction: column; 
     justify-content: space-around;
-<<<<<<< HEAD
     padding: 15px 0; /* Added padding for better spacing */
 }
 
@@ -135,7 +133,7 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center; /* Center icons and images */
-=======
+
     padding: 10px;
 }
 
@@ -148,7 +146,6 @@ input {
 .icon {
     display: block;
     text-align: center;
->>>>>>> f94dee175bd8aac56b8af7eb8e9a1a1a5ca90694
     color: white;
     text-decoration: none;
     font-size: 24px;
@@ -170,14 +167,11 @@ input {
 
 
 .imagem-esquerda {
-    float: left;
+    /* float: left; */
     width: 40px; /* Ajuste o valor conforme necessário */
     margin-right: 10px;
-<<<<<<< HEAD
     display: block; /* Faz a imagem ocupar toda a largura da linha */
     margin-top: 15px; /* Adiciona espaço acima da imagem */
-  }
-=======
     display: block;
     margin-top: 15px; 
 }

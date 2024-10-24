@@ -24,9 +24,9 @@ h1{
 }
 
 .conteiner-bemVindo{
-    background-color: #acacaca9;
+    background-color: #7a1aa4a9;
     border-radius: 20px;
-    box-shadow:  0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px 17px rgba(0, 0, 0, 0.1);
     padding: 90px;
     width: 300px;
     text-align: center;
