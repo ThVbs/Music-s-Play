@@ -73,35 +73,35 @@ body {
     top: 0;
     left: 0;
     height: 100%;
-    width: 60px; /* Slightly wider for better spacing */
-    background-color: rgba(51, 51, 51, 0.8); /* Added transparency */
+    width: 60px; 
+    background-color: rgba(51, 51, 51, 0.8); 
     display: flex;
     flex-direction: column; 
     justify-content: space-around;
-    padding: 50px 0; /* Added padding for better spacing */
+    padding: 50px 0;
 }
 
 .icon {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center icons and images */
+    align-items: center; 
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 24px;
-    transition: background-color 0.3s; /* Smooth background change */
+    transition: background-color 0.3s; 
 }
 
 .icon img {
-    width: 35px; /* Consistent image width */
-    height: 35px; /* Consistent image height */
-    border-radius: 50%; /* Round images */
-    margin-bottom: 5px; /* Space between icon and image */
+    width: 35px; 
+    height: 35px; 
+    border-radius: 50%;
+    margin-bottom: 5px; 
 }
 
 .icon:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Light hover effect */
-    border-radius: 10px; /* Slightly round corners on hover */
-    padding: 5px; /* Add padding on hover for effect */
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 10px; 
+    padding: 5px; 
 }
 
 input[type="range"] {
