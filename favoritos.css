@@ -7,7 +7,13 @@ body{
     font-weight: bold;
     margin: 0;
     padding: 20px;
-    background-color: #adacc7;
+    background-color: #c77de4d0;
+}
+
+.seta{
+    position: fixed;
+    left: 10px;    /* distância do lado esquerdo */
+    top: 10px;     /* distância do topo */
 }
 
 .container-muscCurtidas{
@@ -26,4 +32,8 @@ body{
     width: 100px;
     text-align: center;
     cursor: pointer;
+}
+
+p{
+    margin-left: 10px;
 }

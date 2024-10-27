@@ -5,10 +5,16 @@
 
 body {
     font-style: italic;
-    background-color: #adacc7;
+    background-color: #c77de4d0;
     margin: 0;
     padding: 20px;
     text-align: center;
+}
+
+.seta{
+    position: fixed;
+    left: 10px;    /* distância do lado esquerdo */
+    top: 10px;     /* distância do topo */
 }
 
 h1 {
@@ -19,13 +25,29 @@ h1 {
 }
 
 h5 {
+    text-align: justify;
     color: #666;
     font-size: 1.2em;
     margin: 10px 0;
 }
 
+h3{
+    font-size: 1.5em;
+    text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h4{
+    color: #666;
+}
+
+h2{
+    font-size: 1.3em;
+    color: #666;
+}
+
 p {
-    color: #555;
+    color: black;
     font-size: 1em;
     margin: 10px 0;
 }
@@ -34,18 +56,18 @@ p {
     width: 150px; 
     height: 150px; 
     border-radius: 50%;
-    border: 2px solid #ccc; 
-    object-fit: cover; 
+    border: 2px solid #ccc;
+    /* object-fit: cover;  */
     margin-bottom: 20px;
 }
 
 .artistas{
-    background-color: #2c2c2c;
-    border-radius: 15px;
-    margin: 30px;
-    padding: 10px; 
-    width: 150px;
-    text-align: center;
-    cursor: pointer;
+    /* background-color: #2c2c2c; */
+    display: flex;
+    flex-wrap: wrap;
 }
 
+.artist-mês{
+    text-align: center;
+    margin-right: 70px;
+}

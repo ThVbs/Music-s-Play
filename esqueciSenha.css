@@ -4,26 +4,20 @@
     box-sizing: border-box;
 }
 
-
-
-
 body {
     font-style: italic;
     font-weight: bold;
-    background-color: #adacc7;
+    background-color: #c77de4d0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-
-
-
 .forgot-password-container {
     width: 100%;
     max-width: 400px;
-    background-color: #6e69a8a9;
+    background-color: #b97dd3;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -32,7 +26,7 @@ body {
 
 
 .forgot-password-container h1 {
-    font-family: 'Oleo Script Swash Caps', cursive;
+    font-style: italic;
     font-size: 2.5rem;
     color: #bb1c1c;
     margin-bottom: 10px;
@@ -68,7 +62,7 @@ body {
     width: 100%;
     padding: 12px;
     font-style: italic;
-    background-color: #5d5bc0;
+    background-color: #9f0eff;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -77,26 +71,23 @@ body {
 }
 
 
-.forgot-password-container button:hover {
-    background-color: #5d5bc0;
-}
+/* .forgot-password-container button:hover {
+    background-color: #8a24dd;
+} */
 
 
-
-
-.back-to-login a {
+/* .back-to-login a {
     font-size: 0.9rem;
-    color: #5d5bc0;
+    color: #911cdf;
     text-decoration: none;
     margin-top: 15px;
     display: block;
+} */
+
+
+button:hover{
+    background-color: #76a7bbe0;
 }
-
-
-.back-to-login a:hover {
-    text-decoration: underline;
-}
-
 
 .p{
     color: #fff;

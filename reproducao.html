@@ -8,33 +8,53 @@
 </head>
 <body>
 
-    <div class="player">
+    <!-- <div class="player">
         <div class="header">
             <i class="fas fa-chevron-left"></i>
             <i class="fas fa-search"></i>
-            </div>
+            </div> -->
             <div class="album-art">
                 <img src="imagens/img_justin bieber.jpg" alt="">
                 <div class="user-icon">
                 <i class="fas fa-user"></i>
-            </div> 
+            </div>  
         </div>
         <div class="song-info">
             <h2>Baby ft. Ludacris</h2>
-            <p>Justin Bieber</p>
+            <h4>Justin Bieber</h4>
             </div>
             <!-- <div class="controls">
                 <i class="fas fa-step-backward"></i>
                 <i class="fas fa-play" id="play-pause"></i>
                 <i class="fas fa-step-forward"></i>
             </div> -->
-            <div class="progress-bar">
-                <input type="range" min="0" max="100" value="0" id="progress">
+
+            <div class="duracao">
+                <div class="barra">
+                <progress value="0" max="1"></progress>   <!-- risco da barra junto com o preenchimento -->
+                <div class="ponto"></div>
             </div>
-            <div class="up-next">
+
+            <!-- tempo da músicas -->
+            <div class="tempo">
+                <p class="inicio">0:00</p>
+                <p class="fim">3:40</p>
+            </div>
+        </div>
+
+
+            <div class="botoes">
             <button id="prev">&lt;</button>
             <button id="play">▶</button>
             <button id="next">&gt;</button> 
+            <!-- <i class="fas fa-step-backward"></i>
+            <i class="fas fa-play-circle"></i>
+            <i class="fas fa-step-forward"></i> -->
+
+
+            <!-- <a href="favoritos.html">
+            <buttoni id="next">coração</button>
+            </a> -->
             </div>
 
             <!-- <audio controls>
@@ -42,24 +62,23 @@
             </audio>
         </div> -->
 
+
+
         <div class="barra-lateral">
-            <a href="#" class="icon"><i class="fas fa-perfil"></i>
-                <img src="imagens/img_homeWhite.jpg.png" alt="" class="img-arredondada"> 
-            </a>
 
             <a href="#" class="icon"><i class="fas fa-perfil"></i>
                 <img src="imagens/nicolas.jpeg" alt="" class="img-arredondada"> 
             </a>
     
-            <a href="#" class="icon"><i class="fas fa-home"></i>
-                <img src="imagens/img_homePurple.jpg.png" alt="">
+            <a href="home.html" class="icon"><i class="fas fa-home"></i>
+                <img src="imagens/img_homeWhite.jpg.png" alt="">
             </a>
     
-            <a href="#" class="icon"><i class="fas fa-user"></i>
+            <a href="perfil.html" class="icon"><i class="fas fa-user"></i>
             <img src="imagens/img_user.jpg.png" alt="">
         </a>
     
-            <a href="#" class="icon"><i class="fas fa-coracao"></i>
+            <a href="favoritos.html" class="icon"><i class="fas fa-coracao"></i>
             <img src="imagens/img_coracao.jpg.png" alt="">
         </a>
     

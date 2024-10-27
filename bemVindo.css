@@ -6,7 +6,7 @@
 body{
     font-style: italic;
     font-weight: bold;
-    background-color: #adacc7;
+    background-color: #c77de4d0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +24,7 @@ h1{
 }
 
 .conteiner-bemVindo{
-    background-color: #7a1aa4a9;
+    background-color: #b97dd3;
     border-radius: 20px;
     box-shadow: 0 4px 12px 17px rgba(0, 0, 0, 0.1);
     padding: 90px;
@@ -38,7 +38,7 @@ p{
 }
 
 button{
-    background-color: #616161;
+    background-color: #535353;
     color: white;
     border: none;
     padding: 7px 40px;
@@ -49,5 +49,5 @@ button{
 }
 
 button:hover{
-    background-color: #a2bc94;
+    background-color: #5cc425;
 }

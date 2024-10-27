@@ -6,26 +6,29 @@
 
 body {
     font-family: sans-serif;
-    background-color: #adacc7;
+    background-color: #c77de4d0;
+    color: black;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 100vh;  /* altura minima */
     margin: 0;
+    padding: 0;
 }
 
-
-.player{
-    background-color: #fff;
+ 
+/* .player{
+    background-color: #a7a0a0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgb(0, 0, 0 0.2);
     padding: 30px;
     width: 400px;
-}
+} */
 
 .album-art img{
-    width: 100%;
-    height: auto;
+    width: 300px;
+    height: 300px;
     border-radius: 10px;
 }
 
@@ -49,8 +52,71 @@ body {
     }
 
 .song-info{
-    text-align: center;
+    width: 300px;
 }
+
+h2{
+    margin-bottom: 5px;
+}
+
+.duracao{
+    width: 300px;
+    margin-top: 25px;
+}
+
+.barra{
+    width: 300px;
+    height: 6px;
+    border: 10px solid #eee;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;  /* empurrar para a esquerda so pode usar se o display for flex */
+}
+
+progress{
+    height: 6px;
+    width: 50%;
+    background-color: #333;
+}
+
+.ponto{
+    width: 20px;
+    height: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+    margin-left: -2px;
+}
+
+.tempo{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
+
+.botoes{
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.play{
+    font-size: 50px;
+    cursor: pointer;      /* passar o mouse e aparecer a maozinha */
+}
+
+.prev{
+    font-size: 40px;
+    cursor: pointer;
+}
+    
+.next{
+    font-size: 40px;
+    cursor: pointer;
+}
+
 
 .controls{
     /* display: flex; */
@@ -59,9 +125,9 @@ body {
     gap: 10px;
 }
 
-.progress-bar{
+/* .progress-bar{
     margin-top: 20px;
-}
+} */
 
 .up-next{
     text-align: center;
