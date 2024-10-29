@@ -1,60 +1,46 @@
-// Get references to the HTML elements
-const audio = new Audio("/musica/ytmp3.co.za - Justin Bieber - Baby ft. Ludacris.mp3");
-const playButton = document.getElementById('play');
-const prevButton = document.getElementById('prev');
-const nextButton = document.getElementById('next');
-const progress = document.getElementById('progress');
+// Get elements
+const audio = document.getElementById('audio');
+const playButton = document.querySelector('.play_musica img[alt="Play"]');
+const progressBar = document.querySelector('progress');
+const currentTimeLabel = document.querySelector('.tempo .inicio');
+const durationLabel = document.querySelector('.tempo .fim');
 
-// Play and pause functionality
+// Function to format time in MM:SS
+function formatTime(seconds) {
+    const minutes = Math.floor(seconds / 60);
+    const secs = Math.floor(seconds % 60);
+    return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
+}
+
+// Update progress bar and current time
+audio.addEventListener('timeupdate', () => {
+    // Update progress bar value
+    progressBar.value = audio.currentTime / audio.duration;
+    // Update current time display
+    currentTimeLabel.textContent = formatTime(audio.currentTime);
+});
+
+
+audio.addEventListener('loadedmetadata', () => {
+    durationLabel.textContent = formatTime(audio.duration);
+});
+
+
 playButton.addEventListener('click', () => {
     if (audio.paused) {
         audio.play();
-        playButton.innerHTML = '❚❚'; // Change to pause icon
+        playButton.src = "imagens/img_pause.png"; 
     } else {
         audio.pause();
-        playButton.innerHTML = '▶'; // Change to play icon
+        playButton.src = "imagens/img_playArrow.png"; 
     }
 });
 
-// Update progress bar as the audio plays
-audio.addEventListener('timeupdate', () => {
-    const progressValue = (audio.currentTime / audio.duration) * 100;
-    progress.value = progressValue;
+
+progressBar.addEventListener('click', (event) => {
+    const rect = progressBar.getBoundingClientRect();
+    const offsetX = event.clientX - rect.left;
+    const width = rect.width;
+    const percentage = offsetX / width;
+    audio.currentTime = percentage * audio.duration;
 });
-
-// Seek functionality (when user drags the progress bar)
-progress.addEventListener('input', () => {
-    const seekTime = (progress.value / 100) * audio.duration;
-    audio.currentTime = seekTime;
-});
-
-// Dummy track list for next and previous functionality
-const tracks = [
-    "/musica/ytmp3.co.za - Justin Bieber - Baby ft. Ludacris.mp3",
-    // Add more tracks here
-];
-
-// Track index
-let currentTrackIndex = 0;
-
-// Previous track functionality
-prevButton.addEventListener('click', () => {
-    currentTrackIndex = (currentTrackIndex > 0) ? currentTrackIndex - 1 : tracks.length - 1;
-    loadTrack(currentTrackIndex);
-});
-
-// Next track functionality
-nextButton.addEventListener('click', () => {
-    currentTrackIndex = (currentTrackIndex < tracks.length - 1) ? currentTrackIndex + 1 : 0;
-    loadTrack(currentTrackIndex);
-});
-
-// Function to load the selected track
-function loadTrack(index) {
-    audio.src = tracks[index];
-    audio.play();
-    playButton.innerHTML = '❚❚'; // Set play button to pause
-}
-
-// Load the first track initially
-loadTrack(currentTrackIndex);

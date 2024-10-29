@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-style: italic;
     background-color: #c77de4d0;
     color: black;
     display: flex;
@@ -17,7 +17,6 @@ body {
     padding: 0;
 }
 
- 
 /* .player{
     background-color: #a7a0a0;
     border-radius: 10px;
@@ -49,7 +48,7 @@ body {
         position: relative; /* Para manter o contexto do posicionamento absoluto */
         float: left; /* Faz o contêiner flutuar à esquerda */
         margin-top: 20px;
-    }
+}
 
 .song-info{
     width: 300px;
@@ -67,7 +66,7 @@ h2{
 .barra{
     width: 300px;
     height: 6px;
-    border: 10px solid #eee;
+    border: 10px solid #fffefe;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -81,9 +80,9 @@ progress{
 }
 
 .ponto{
-    width: 20px;
-    height: 20px;
-    background-color: #eee;
+    width: 15px;
+    height: 15px;
+    background-color: #2e2020;
     border-radius: 50%;
     margin-left: -2px;
 }
@@ -101,17 +100,21 @@ progress{
     align-items: center;
     margin-top: 15px;
 }
-
-.play{
-    font-size: 50px;
-    cursor: pointer;      /* passar o mouse e aparecer a maozinha */
+    
+.play_musica{
+    gap: 10px;
 }
 
-.prev{
-    font-size: 40px;
+.play_musica img {
+    width: 50px; 
+    height: auto; 
+    transition: transform 0.3s;
+}
+
+.play_musica img:hover{
     cursor: pointer;
 }
-    
+
 .next{
     font-size: 40px;
     cursor: pointer;
@@ -119,15 +122,10 @@ progress{
 
 
 .controls{
-    /* display: flex; */
     justify-content: center;
     margin-bottom: 20px;
     gap: 10px;
 }
-
-/* .progress-bar{
-    margin-top: 20px;
-} */
 
 .up-next{
     text-align: center;
@@ -187,5 +185,3 @@ input[type="range"] {
     gap: 10px;
     margin-bottom: 20px;
 }
-
-
