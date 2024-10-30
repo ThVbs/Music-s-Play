@@ -73,7 +73,7 @@ h2{
     justify-content: flex-start;  /* empurrar para a esquerda so pode usar se o display for flex */
 }
 
-progress{
+/* progress{
     height: 6px;
     width: 50%;
     background-color: #333;
@@ -91,7 +91,7 @@ progress{
     display: flex;
     width: 300px;
     justify-content: space-between;
-}
+} */
 
 .botoes{
     width: 300px;
