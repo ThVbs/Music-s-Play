@@ -15,13 +15,14 @@
     <div class="conteiner-inscricao">
         <h1>Music's play</h1>
         <h2>Efetuar Cadastro</h2>
-        <p>Digite seus dados para se cadastrar na plataforma</p>
         <br>
+        <p>Digite seus dados para se cadastrar na plataforma</p>
+        <br><br>
         <form action="/cadastrar" method="post">
             <input type="text" name="nome" placeholder="Nome" required>
             <input type="text" name="Sobrenome" placeholder="Sobrenome" required>
             <input type="date" name="Data de nascimento dd/mm/aaaa" placeholder="Data de nascimento dd/mm/aaaa" required>
-            <input type="number" name="CPF" placeholder="CPF" required>
+            <input type="number" name="CPF" placeholder="CPF" min="11" max="11" required >
             <input type="email" name="email" placeholder="E-mail" required>
             <input type="email" name="confirmar_email" placeholder="Confirma e-mail" required>
             <input type="password" name="senha" placeholder="Senha" required>

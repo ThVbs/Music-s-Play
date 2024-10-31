@@ -6,7 +6,7 @@
  
 body {
     font-style: italic;
-    background-color: #c77de4d0;
+    background: linear-gradient(to bottom, #092549, black);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,17 +20,19 @@ h1, h2, p {
 
 h1{
     color: #bb1c1c;
-    font-size: 3.5em;
+    font-size: 4.0em;
 }
 
 h2{
-    color: black;
+    color: white;
     font-style: italic;
+    font-size: 1.5em;
 }
 
 p{
-    color: black;
+    color: white;
     font-family: cursive;
+    font-size: 1.5em;
 } 
 
 input[type="text"],
@@ -39,7 +41,7 @@ input[type="date"],
 input[type="password"],
 input[type="number"]{
     padding: 15px;
-    width: 40%;
+    width: 30%;
     margin-right: 30px;
     border: black solid 1px;
     border-radius: 40px;

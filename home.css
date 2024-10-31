@@ -4,7 +4,7 @@
 }
 
 body { 
-    background-color: #c77de4d0;
+    background: linear-gradient(to bottom, #092549, black);
     color: black;
     font-family: Arial, sans-serif;
     display: flex;
@@ -31,12 +31,10 @@ h1 {
 
 h2{
     text-align: center; 
-    
+    color: white;
+    font-size: 1.7em;
 }
 
-h3{
-    font-size: 1.5em;
-}
 
 .artist-section {
     color: white;

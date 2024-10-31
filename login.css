@@ -7,7 +7,7 @@
 body {
     font-style: italic;
     font-weight: bold;
-    background-color: #c77de4d0;
+    background: linear-gradient(to bottom, #092549, black);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,11 +24,11 @@ h1 {
 }
 
 .login-container{
-    background-color: #b97dd3;
+    background-color: #b6b6b6c0;
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 90px;
-    width: 350px;
+    width: 450px;
     text-align: center;
 }
 
@@ -49,7 +49,7 @@ button{
 }
 
 button:hover {
-    background-color: #5cc425; /* Mudar a cor qnd passar o mouse por cima */
+    background-color: #1b3d64; /* Mudar a cor qnd passar o mouse por cima */
 }
 
 input{

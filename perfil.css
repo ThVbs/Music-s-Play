@@ -5,7 +5,7 @@
 
 body {
     font-style: italic;
-    background-color: #c77de4d0;
+    background: linear-gradient(to bottom, #092549, black);
     margin: 0;
     padding: 20px;
     text-align: center;
@@ -19,8 +19,8 @@ body {
 
 h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #333;
-    font-size: 2.5em;
+    color: white;
+    font-size: 2.5em; 
     margin: 20px 0;
 }
 
@@ -35,6 +35,7 @@ h3{
     font-size: 1.5em;
     text-align: justify;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
 }
 
 h4{
@@ -43,11 +44,11 @@ h4{
 
 h2{
     font-size: 1.3em;
-    color: #666;
+    color: #b3b3b3;
 }
 
 p {
-    color: black;
+    color: rgb(243, 242, 242);
     font-size: 1em;
     margin: 10px 0;
 }

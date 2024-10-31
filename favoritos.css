@@ -7,10 +7,25 @@ body{
     font-weight: bold;
     margin: 0;
     padding: 20px;
-    background-color: #c77de4d0;
+    background: linear-gradient(to bottom, #092549, black);
 }
 
-.seta{
+h1{
+    color: rgb(255, 255, 255);
+}
+
+p{
+    color: rgb(202, 202, 202);
+}
+
+h5{
+    color: rgb(209, 204, 204);
+}
+
+h3{
+    color: white;
+}
+.seta{ 
     position: fixed;
     left: 10px;    /* distância do lado esquerdo */
     top: 10px;     /* distância do topo */

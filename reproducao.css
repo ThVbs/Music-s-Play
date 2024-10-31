@@ -6,7 +6,7 @@
 
 body {
     font-style: italic;
-    background-color: #c77de4d0;
+    background: linear-gradient(to bottom, #092549, black);
     color: black;
     display: flex;
     flex-direction: column;
@@ -56,10 +56,15 @@ body {
 
 h2{
     margin-bottom: 5px;
+    color: white;
+}
+
+h4{
+    color: white;
 }
 
 .duracao{
-    width: 300px;
+    width: 300px; 
     margin-top: 25px;
 }
 
@@ -72,26 +77,6 @@ h2{
     align-items: center;
     justify-content: flex-start;  /* empurrar para a esquerda so pode usar se o display for flex */
 }
-
-/* progress{
-    height: 6px;
-    width: 50%;
-    background-color: #333;
-}
-
-.ponto{
-    width: 15px;
-    height: 15px;
-    background-color: #2e2020;
-    border-radius: 50%;
-    margin-left: -2px;
-}
-
-.tempo{
-    display: flex;
-    width: 300px;
-    justify-content: space-between;
-} */
 
 .botoes{
     width: 300px;

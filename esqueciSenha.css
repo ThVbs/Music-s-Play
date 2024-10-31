@@ -7,7 +7,7 @@
 body {
     font-style: italic;
     font-weight: bold;
-    background-color: #c77de4d0;
+    background: linear-gradient(to bottom, #092549, black);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +17,7 @@ body {
 .forgot-password-container {
     width: 100%;
     max-width: 400px;
-    background-color: #b97dd3;
+    background-color: #b6b6b6c0;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -62,7 +62,7 @@ body {
     width: 100%;
     padding: 12px;
     font-style: italic;
-    background-color: #9f0eff;
+    background-color: #0e46ff;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -71,22 +71,10 @@ body {
 }
 
 
-/* .forgot-password-container button:hover {
-    background-color: #8a24dd;
-} */
-
-
-/* .back-to-login a {
-    font-size: 0.9rem;
-    color: #911cdf;
-    text-decoration: none;
-    margin-top: 15px;
-    display: block;
-} */
 
 
 button:hover{
-    background-color: #76a7bbe0;
+    background-color: #1b3d64;
 }
 
 .p{
