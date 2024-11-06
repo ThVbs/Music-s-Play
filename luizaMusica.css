@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-style: italic;
+    background: linear-gradient(to bottom, #092549, black);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  /* altura minima */
+    margin: 0;
+    padding: 0;
+}
+
+.player{
+    background-color: #a7a0a0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0 0.2);
+    padding: 30px;
+    width: 400px;
+}
+
+.album-art{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#music-video {
+    width: 5   00%;          /* A largura do vídeo vai ocupar 100% da largura do contêiner pai */
+    max-width: 1000px;    /* Limita a largura máxima do vídeo, você pode ajustar esse valor */
+    height: auto;         /* Ajusta a altura automaticamente para manter a proporção */
+    border-radius: 10px;  /* Para manter bordas arredondadas, caso queira */
+}
+
+
+.progress-container{
+    width: 200%;
+    background: #ddd;
+    border-radius: 5px;
+    margin: 20px 0;  
+}
+
+.conteiner-player{
+        background-color: #acacaca9;
+        border-radius: 20px;
+        padding: 20px;
+        max-width: 400px;
+        margin-left: auto;
+        position: relative; /* Para manter o contexto do posicionamento absoluto */
+        float: left; /* Faz o contêiner flutuar à esquerda */
+        margin-top: 20px;
+}
+
+.song-info{
+    width: 300px;
+
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2{
+    margin-bottom: 5px;
+    color: white;
+}
+
+h4{
+    color: white;
+}
+
+.barra{
+    width: 300px;
+    height: 6px;
+    border: 10px solid #fffefe;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;  /* empurrar para a esquerda so pode usar se o display for flex */
+}
+
+.botoes{
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+}
+    
+.play_musica{
+    gap: 10px;
+}
+
+.play_musica img {
+    width: 50px; 
+    height: auto; 
+    transition: transform 0.3s;
+}
+
+.play_musica img:hover{
+    cursor: pointer;
+}
+
+.next{
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+.controls{
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.up-next{
+    text-align: center;
+}
+
+
+.barra-lateral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 60px; 
+    background-color: rgba(51, 51, 51, 0.8); 
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 24px;
+    transition: background-color 0.3s; 
+}
+
+.icon img {
+    width: 35px; 
+    height: 35px; 
+    border-radius: 50%;
+    margin-bottom: 5px; 
+}
+
+.icon:hover {
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 10px; 
+    padding: 5px; 
+}
+
+input[type="range"] {
+    width: 100%;
+    background: #ffffff;
+    border-radius: 5px;
+}
+
+.up-next {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.controls{
+    justify-content: center; 
+    gap: 10px;
+    margin-bottom: 20px;
+}
