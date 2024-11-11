@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-style: italic;
+    background: linear-gradient(to bottom, #092549, black);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  /* altura minima */
+    margin: 0;
+    padding: 0;
+}
+
+.player{
+    background-color: #a7a0a0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0 0.2);
+    padding: 30px;
+    width: 400px;
+}
+
+.album-art{
+    width: 700;
+    height: 400px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#music-video {
+    width: 5   00%;          /* A largura do vídeo vai ocupar 100% da largura do contêiner pai */
+    max-width: 1000px;    /* Limita a largura máxima do vídeo, você pode ajustar esse valor */
+    height: auto;         /* Ajusta a altura automaticamente para manter a proporção */
+    border-radius: 10px;  /* Para manter bordas arredondadas, caso queira */
+    margin-top: -60px;
+}
+ 
+.song-info{
+    width: 400px;
+
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2{
+    margin-bottom: 5px;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    margin-left: -50px;
+}
+
+.barra{
+    width: 400px;
+    height: 6px;
+    border: 10px solid #fffefe;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;  /* empurrar para a esquerda so pode usar se o display for flex */
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 24px;
+    transition: background-color 0.3s; 
+}
+
+.icon img {
+    width: 55px; 
+    height: 50px; 
+    border-radius: 70%;
+    margin-bottom: 5px; 
+}
+
+.lateral{
+    margin-left: -1300px;
+    margin-top: -10px;
+}
