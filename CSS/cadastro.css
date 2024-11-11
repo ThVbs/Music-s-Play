@@ -9,7 +9,7 @@ body {
     background: linear-gradient(to bottom, #092549, black);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
     height: 100vh;
 }
 
@@ -41,13 +41,14 @@ input[type="date"],
 input[type="password"],
 input[type="number"]{
     padding: 15px;
-    width: 30%;
+    width: 35%;
     margin-right: 30px;
     border: black solid 1px;
-    border-radius: 40px;
+    border-radius: 10px;
     justify-content: center;
-    margin-left: 40px;
-    font-weight: bold;
+    margin-left: 75px;
+    /* font-weight: bold; */
+    font-style: italic;
 }
 
 button {
@@ -72,4 +73,14 @@ button {
 #botaoVerde{
     background-color: green;
     font-weight: bold;
+}
+
+.conteiner-box{
+    padding: 15px;
+    width: 150%;
+    max-width: 900px;
+    background-color: #ddcece;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    background: linear-gradient(to bottom, #051a36dd, black);
 }

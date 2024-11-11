@@ -26,10 +26,10 @@ h1{
 .conteiner-bemVindo{
     background-color: #b6b6b6c0;
     border-radius: 20px;
-    box-shadow: 0 4px 12px 17px rgba(0, 0, 0, 0.1);
     padding: 90px;
     width: 300px;
     text-align: center;
+    box-shadow: 0 0 10px rgb(20, 121, 222);
 }
 
 p{

@@ -12,16 +12,8 @@ body {
     align-items: center;
 }
 
-input{
-    margin-left: 40px;
-} 
-
-svg{
-    margin-left: 150px;
-}
-
 .simbolo{
-    margin-left: 290px;
+    margin-left: 350px;
 }
 
 h1 {
@@ -43,6 +35,7 @@ h2{
      flex-wrap: wrap;
     justify-content: space-around; 
     margin-top: 20px;
+    margin-left: 40px;
 }
 
 .artist {
@@ -67,6 +60,7 @@ h2{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-right: -15px;
 }
 
 .favorites {
@@ -102,12 +96,6 @@ img {
     height: auto;
 }
 
-input {
-    margin-top: 50px;
-    border-radius: 10%;
-    font-size: 17px;
-}
-
 .music-info {
     position: fixed;
     bottom: 20px;
@@ -139,7 +127,7 @@ input {
     top: 0;
     left: 0;
     height: 100%;
-    width: 60px; 
+    width: 40px; 
     background-color: rgba(51, 51, 51, 0.8); 
     display: flex;
     flex-direction: column; 
@@ -152,7 +140,7 @@ input {
     flex-direction: column;
     align-items: center; /* Center icons and images */
 
-    padding: 10px;
+    padding: 4px;
 }
 
 .img-arredondada {
@@ -214,11 +202,49 @@ input {
     margin-right: 10px;
 }
 .search-input {
-    padding: 1.3px; /* Espaçamento interno */
-    border: 1px solid #000000; /* Cor da borda */
+    height: 20px;
+    padding: 5px; /* Espaçamento interno */ 
     border-radius: 5px; /* Bordas arredondadas */
     width: 220px; /* Largura do campo */
-    font-size: 16px; /* Tamanho da fonte */
-    transition: border-color 0.2s; /* Transição suave na mudança de cor */
+    font-size: 13px; /* Tamanho da fonte */
+    /* display: block; */
+    justify-content: center;
+    margin-top: 70px;
+    margin-left: 400px;
+
+
+    font-size: 16px;
+    width: 300px; /* Largura do campo de pesquisa */
+    border-radius: 25px;
+    border: 1px solid #ccc;
+  }
+
+
+input {
+    margin-top: 50px;
+    border-radius: 10%;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 470px;
 }
 
+.logo{
+    margin-top: 1px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 15px;
+    margin-left: 30px;
+}
+
+.home-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center;     /* Centraliza horizontalmente */
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+}

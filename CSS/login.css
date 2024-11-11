@@ -24,11 +24,11 @@ h1 {
 }
 
 .login-container{
-    background-color: #b6b6b6c0;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 90px;
-    width: 450px;
+    background-color: #bcbcbcc0;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgb(20, 121, 222);
+    padding: 50px;
+    width: 400px;
     text-align: center;
 }
 

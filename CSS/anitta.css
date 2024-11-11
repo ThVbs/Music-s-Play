@@ -1,4 +1,11 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
+    height: 100%;
     margin: 0;
     padding: 0;
     background: linear-gradient(to bottom, #092549, black);
@@ -10,12 +17,13 @@ body {
     margin: 50px auto;
     text-align: center;
 }
-
+ 
 h1 {
     font-style: italic;
     font-size: 3.0em;
     margin-bottom: 10px;
-    color: #333;
+    color: #f3f3f3;
+    margin-top: -50px;
 }
 
 h3 {
@@ -23,6 +31,7 @@ h3 {
     margin-bottom: 20px;
     color: #666;
 }
+
 
 .playlists {
     display: flex;
@@ -46,11 +55,11 @@ h3 {
 
 .container-artist p {
     font-size: 1.2em;
-    color: #555;
+    color: white;
     margin-top: 10px;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .playlists {
         flex-direction: column;
         align-items: center;
@@ -64,4 +73,4 @@ h3 {
         width: 120px;
         height: 120px;
     }
-}
+} */

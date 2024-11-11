@@ -20,8 +20,8 @@ body {
     background-color: #b6b6b6c0;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
+    box-shadow: 0 0 10px rgb(20, 121, 222);
 }
 
 
@@ -70,9 +70,6 @@ body {
     transition: background-color 0.3s;
 }
 
-
-
-
 button:hover{
     background-color: #1b3d64;
 }
@@ -80,7 +77,6 @@ button:hover{
 .p{
     color: #fff;
 }
-
 
 #email::placeholder{
     font-family:'Times New Roman', Times, serif
