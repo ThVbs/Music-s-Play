@@ -1,46 +1,57 @@
-// Get elements
-const audio = document.getElementById('audio');
-const playButton = document.querySelector('.play_musica img[alt="Play"]');
-const progressBar = document.querySelector('progress');
-const currentTimeLabel = document.querySelector('.tempo .inicio');
-const durationLabel = document.querySelector('.tempo .fim');
+const player = document.getElementById('player');
+const musicaSrc = document.getElementById('musica-src');
+const musicaTitulo = document.getElementById('musica-titulo');
+const artistaNome = document.getElementById('artista-nome');
+const playPauseBtn = document.getElementById('play-pause-btn');
+const prevBtn = document.getElementById('prev-btn');
+const nextBtn = document.getElementById('next-btn');
 
-// Function to format time in MM:SS
-function formatTime(seconds) {
-    const minutes = Math.floor(seconds / 60);
-    const secs = Math.floor(seconds % 60);
-    return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
+let playlist = [
+    { titulo: 'Música 1', artista: 'Artista 1', src: 'musica1.mp3' },
+    { titulo: 'Música 2', artista: 'Artista 2', src: 'musica2.mp3' },
+    { titulo: 'Música 3', artista: 'Artista 3', src: 'musica3.mp3' }
+];
+
+let currentIndex = 0; // Índice da música atual
+
+// Função para tocar a música com base no índice
+function tocarMusica(index) {
+    currentIndex = index;
+    musicaSrc.src = playlist[currentIndex].src;
+    musicaTitulo.textContent = playlist[currentIndex].titulo;
+    artistaNome.textContent = playlist[currentIndex].artista;
+    player.load(); // Recarrega o player para carregar a nova música
+    player.play();
+    playPauseBtn.textContent = 'Pausar'; // Atualiza o botão para 'Pausar'
 }
 
-// Update progress bar and current time
-audio.addEventListener('timeupdate', () => {
-    // Update progress bar value
-    progressBar.value = audio.currentTime / audio.duration;
-    // Update current time display
-    currentTimeLabel.textContent = formatTime(audio.currentTime);
-});
-
-
-audio.addEventListener('loadedmetadata', () => {
-    durationLabel.textContent = formatTime(audio.duration);
-});
-
-
-playButton.addEventListener('click', () => {
-    if (audio.paused) {
-        audio.play();
-        playButton.src = "imagens/img_pause.png"; 
+// Função para alternar entre tocar/pausar
+function togglePlayPause() {
+    if (player.paused) {
+        player.play();
+        playPauseBtn.textContent = 'Pausar';
     } else {
-        audio.pause();
-        playButton.src = "imagens/img_playArrow.png"; 
+        player.pause();
+        playPauseBtn.textContent = 'Tocar';
     }
-});
+}
 
+// Função para pular para a próxima música
+function proximaMusica() {
+    currentIndex = (currentIndex + 1) % playlist.length; // Se atingir o final, vai para o início
+    tocarMusica(currentIndex);
+}
 
-progressBar.addEventListener('click', (event) => {
-    const rect = progressBar.getBoundingClientRect();
-    const offsetX = event.clientX - rect.left;
-    const width = rect.width;
-    const percentage = offsetX / width;
-    audio.currentTime = percentage * audio.duration;
-});
+// Função para ir para a música anterior
+function musicaAnterior() {
+    currentIndex = (currentIndex - 1 + playlist.length) % playlist.length; // Vai para o final se for a primeira
+    tocarMusica(currentIndex);
+}
+
+// Adiciona os eventos aos botões
+playPauseBtn.addEventListener('click', togglePlayPause);
+nextBtn.addEventListener('click', proximaMusica);
+prevBtn.addEventListener('click', musicaAnterior);
+
+// Inicializa a primeira música
+tocarMusica(currentIndex);

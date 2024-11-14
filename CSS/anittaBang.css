@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-style: italic;
+    background: linear-gradient(to bottom, #092549, black);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  /* altura minima */
+    margin: 0;
+    padding: 0;
+}
+
+.album-art img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin-top: -20px;
+}
+
+.progress-container{
+    width: 200%;
+    background: #ddd;
+    border-radius: 5px;
+    margin: 20px 0;  
+}
+
+.conteiner-player{
+        background-color: #acacaca9;
+        border-radius: 20px;
+        padding: 20px;
+        max-width: 400px;
+        margin-left: auto;
+        position: relative; /* Para manter o contexto do posicionamento absoluto */
+        float: left; /* Faz o contêiner flutuar à esquerda */
+        margin-top: 20px;
+}
+
+.song-info{
+    width: 300px;
+}
+
+h2{
+    margin-bottom: 5px;
+    color: white;
+    text-align: center;
+    margin-top: -20px;
+}
+
+h4{
+    color: white;
+}
+
+.duracao{
+    width: 300px; 
+    margin-top: 25px;
+}
+
+.barra{
+    width: 300px;
+    height: 6px;
+    border: 10px solid #fffefe;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;  /* empurrar para a esquerda so pode usar se o display for flex */
+}
+
+.botoes{
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+}
+    
+.play_musica{
+    gap: 10px;
+}
+
+.play_musica img {
+    width: 50px; 
+    height: auto; 
+    transition: transform 0.3s;
+}
+
+.play_musica img:hover{
+    cursor: pointer;
+}
+
+.next{
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+.controls{
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.up-next{
+    text-align: center;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 24px;
+    transition: background-color 0.3s; 
+}
+
+.icon img {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%;
+    margin-bottom: 5px; 
+} 
+
+.lateral{
+    margin-left: -1150px;
+    margin-top: -20px;
+}
+
+.icon:hover {
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 10px; 
+    padding: 5px; 
+}
+
+input[type="range"] {
+    width: 100%;
+    background: #ffffff;
+    border-radius: 5px;
+}
+
+.up-next {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.controls{
+    justify-content: center; 
+    gap: 10px;
+    margin-bottom: 20px;
+}

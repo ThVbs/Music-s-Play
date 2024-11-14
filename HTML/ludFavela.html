@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Player</title>
-    <link rel="stylesheet" href="/Musics_Play/CSS/ludSouEu.css">
+    <link rel="stylesheet" href="/Musics_Play/CSS/ludFavela.css">
 </head>
 <body>
+
+
 
     <div class="lateral">
         <a href="/Musics_Play/HTML/ludmilla.html" class="icon">
@@ -19,12 +21,18 @@
         </a>
     </div>
 
+    <div class="album-art">
+                <img src="/Musics_Play/imagens/FAVELA CHEGOU.JPG" alt="">
+                <div class="user-icon">
+                <i class="fas fa-user"></i>
+            </div> 
+            <br><br>
     <!-- <div id="conteiner"> -->
         <div id="conteiner-music">
             <div class="album-art">
-                <video id="music-video" width="100%" controls autoplay>
-                    <source src="/Musics_Play/MUSICAS/LUDMILLA e Anitta - Favela Chegou - DVD Hello Mundo (Ao Vivo).mp4" type="video/mp4">
-
+                <audio controls>
+                    <source src="/Musics_Play/MUSICAS/FAVELA CHEGOU AUDIO- LUDMILLA.mp3" type="audio/mpeg" >
+                </audio>
                     <div class="user-icon">
                         <i class="fas fa-user"></i>
                     </div>
@@ -33,9 +41,6 @@
                 <br><br>
                 <h2>Favela Chegou - Ludmilla</h2>
             </div>
-        <!-- </div> -->
-
-    <!-- </div> -->
 
     <script src="/Musics_Play/JS/reproducao.js" type="audio/mpeg"></script>
 

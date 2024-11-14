@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplicativo de Música - Artista</title>
+  <link rel="stylesheet" href="/Musics_Play/CSS/sertanejo.css">
+</head>
+<body>
+  <div class="music-player">
+    <h1>Reproduzindo: <span id="track-name">Nenhuma música</span></h1>
+
+    <!-- Player de áudio -->
+    <audio id="audio" controls>
+      <source src="/Musics_Play/MUSICAS/ALÉM DO DINHEIRO AUDIO- FILIPE RET.mp3" type="audio/mp3">
+      <source src="/Musics_Play/MUSICAS/GOOD VIBE AUDIO- FILIPE RET.mp3" type="audio/mp3">
+      <!-- Adicione mais músicas aqui -->
+    </audio>
+
+    <!-- Controles de navegação -->
+    <div class="controls">
+      <button id="prev" class="control-button">Anterior</button>
+      <button id="play-pause" class="control-button">Play</button>
+      <button id="next" class="control-button">Próxima</button>
+    </div>
+
+    <!-- Playlist -->
+    <div class="playlist">
+      <h3>Playlist</h3>
+      <ul id="playlist">
+        <!-- Lista de músicas será preenchida pelo JavaScript -->
+      </ul>
+    </div>
+  </div>
+
+  <script src="/Musics_Play/JS/sertanejo.js"></script>
+</body>
+</html>
