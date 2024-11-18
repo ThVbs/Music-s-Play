@@ -35,7 +35,7 @@ h2{
      flex-wrap: wrap;
     justify-content: space-around; 
     margin-top: 20px;
-    margin-left: 40px;
+    margin-left: 50px;
 }
 
 .artist {
@@ -52,6 +52,7 @@ h2{
 .artist-escolhidos {
     text-align: center;
     margin-right: 70px;
+    margin-left: 10px;
 }
 
 .playlists {

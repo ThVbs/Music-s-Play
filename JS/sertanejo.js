@@ -1,82 +1,44 @@
-// Lista de músicas
-const musicList = [
-    { name: 'Além do Dinheiro - Filipe Ret', file: '/Musics_Play/MUSICAS/ALÉM DO DINHEIRO AUDIO- FILIPE RET.mp3' },
-    { name: 'Good Vibe - Filipe Ret', file: '/Musics_Play/MUSICAS/GOOD VIBE AUDIO - FILIPE RET.mp3' },
-    { name: 'Nova Música - Artista X', file: '/Musics_Play/MUSICAS/nova-musica.mp3' },  // Nova música
-    { name: 'Outra Música - Artista Y', file: '/Musics_Play/MUSICAS/outra-musica.mp3' }  // Outra música
-  ];
-  
-  // Variáveis de controle
-  let currentTrackIndex = 0;
-  const audio = document.getElementById('audio');
-  const trackName = document.getElementById('track-name');
-  const playPauseButton = document.getElementById('play-pause');
-  const prevButton = document.getElementById('prev');
-  const nextButton = document.getElementById('next');
-  const playlist = document.getElementById('playlist');
-  
-  // Função para carregar a música
-  function loadTrack(index) {
-    currentTrackIndex = index;
-    const track = musicList[currentTrackIndex];
-    trackName.textContent = track.name;
-    audio.src = track.file;
-    audio.load(); // Atualiza a fonte e recarrega o áudio
-  }
-  
-  // Função para tocar ou pausar a música
-  function togglePlayPause() {
-    if (audio.paused) {
-      audio.play();
-      playPauseButton.textContent = 'Pausar';
-    } else {
-      audio.pause();
-      playPauseButton.textContent = 'Tocar';
+// Seleciona todos os botões "Tocar" na playlist
+const playButtons = document.querySelectorAll('.tocar');
+
+// Seleciona o elemento <audio> que será utilizado para tocar a música
+const audioPlayer = new Audio();
+
+// Função para tocar a música
+function playMusic(src) {
+    audioPlayer.src = src; // Define a fonte da música
+    audioPlayer.play(); // Inicia a reprodução
+}
+
+// Adiciona um evento de clique para cada botão "Tocar"
+playButtons.forEach((button, index) => {
+    // Defina o caminho do arquivo de áudio para cada música na playlist
+    let musicSrc;
+    switch (index) {
+        case 0:
+            musicSrc = '/Musics_Play/MUSICAS/24 HORAS POR DIA AUDIO- LUDMILLA.mp3'; // Substitua pelo caminho real do arquivo de música 1
+            break;
+        case 1:
+            musicSrc = '/Musics_Play/MUSICAS/Musica2.mp3'; // Substitua pelo caminho real do arquivo de música 2
+            break;
+        case 2:
+            musicSrc = '/Musics_Play/MUSICAS/Musica3.mp3'; // Substitua pelo caminho real do arquivo de música 3
+            break;
+        default:
+            musicSrc = ''; // Para outras músicas
     }
-  }
-  
-  // Função para ir para a música anterior
-  function playPrev() {
-    currentTrackIndex = (currentTrackIndex - 1 + musicList.length) % musicList.length;
-    loadTrack(currentTrackIndex);
-    audio.play();
-    playPauseButton.textContent = 'Pausar';
-  }
-  
-  // Função para ir para a próxima música
-  function playNext() {
-    currentTrackIndex = (currentTrackIndex + 1) % musicList.length;
-    loadTrack(currentTrackIndex);
-    audio.play();
-    playPauseButton.textContent = 'Pausar';
-  }
-  
-  // Função para carregar a playlist no HTML
-  function loadPlaylist() {
-    playlist.innerHTML = ''; // Limpar lista atual
-    musicList.forEach((track, index) => {
-      const li = document.createElement('li');
-      li.textContent = track.name;
-      li.addEventListener('click', () => {
-        loadTrack(index);
-        audio.play();
-        playPauseButton.textContent = 'Pausar';
-      });
-      playlist.appendChild(li);
+
+    // Quando o botão "Tocar" for clicado, chama a função para tocar a música
+    button.addEventListener('click', () => {
+        playMusic(musicSrc); // Chama a função playMusic com o caminho da música
     });
-  }
-  
-  // Inicializa o player com a primeira música e carrega a playlist
-  loadTrack(currentTrackIndex);
-  loadPlaylist();
-  
-  // Adiciona eventos aos botões
-  playPauseButton.addEventListener('click', togglePlayPause);
-  prevButton.addEventListener('click', playPrev);
-  nextButton.addEventListener('click', playNext);
-  
-  // Atualiza o nome da música quando a reprodução termina
-  audio.addEventListener('ended', () => {
-    playNext(); // Toca a próxima música automaticamente
-  });
-  
+});
+
+// Adiciona funcionalidade para o botão "Adicionar" (caso deseje implementar)
+const addButtons = document.querySelectorAll('.adicionar');
+addButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        alert('Música adicionada à sua lista!');
+        // Lógica para adicionar a música à playlist do usuário (ex: adicionar ao banco de dados ou armazenar em localStorage)
+    });
+});

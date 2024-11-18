@@ -1,38 +1,61 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aplicativo de Música - Artista</title>
-  <link rel="stylesheet" href="/Musics_Play/CSS/sertanejo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="/Musics_Play/CSS/sertanejo.css">
 </head>
 <body>
-  <div class="music-player">
-    <h1>Reproduzindo: <span id="track-name">Nenhuma música</span></h1>
+    <a href="/Musics_Play/HTML/home.html">
+    <div class="seta"><img src="/Musics_Play/imagens/imagens_cetaVoltar.jpg.png" alt=""></div>
+    </a> 
+    <h1>Sertanejo</h1>
 
-    <!-- Player de áudio -->
-    <audio id="audio" controls>
-      <source src="/Musics_Play/MUSICAS/ALÉM DO DINHEIRO AUDIO- FILIPE RET.mp3" type="audio/mp3">
-      <source src="/Musics_Play/MUSICAS/GOOD VIBE AUDIO- FILIPE RET.mp3" type="audio/mp3">
-      <!-- Adicione mais músicas aqui -->
-    </audio>
-
-    <!-- Controles de navegação -->
-    <div class="controls">
-      <button id="prev" class="control-button">Anterior</button>
-      <button id="play-pause" class="control-button">Play</button>
-      <button id="next" class="control-button">Próxima</button>
-    </div>
-
-    <!-- Playlist -->
     <div class="playlist">
-      <h3>Playlist</h3>
-      <ul id="playlist">
-        <!-- Lista de músicas será preenchida pelo JavaScript -->
-      </ul>
-    </div>
-  </div>
+        <!-- Música 1 -->
+        <div class="musica">
+            <img src="/Musics_Play/imagens/img_FelipeRet.jpg" alt="Capa Felipe Ret" class="capa-musica">
+            <div class="info-musica">
+                <p class="titulo-musica">Música 1</p>
+                <p class="artista-musica">Felipe Ret</p>
+            </div>
+            <div class="acoes-musica">
+                <button class="tocar">Tocar</button>
+                <button class="adicionar">+</button>
+            </div>
+        </div>
 
-  <script src="/Musics_Play/JS/sertanejo.js"></script>
+        <!-- Música 2 -->
+        <div class="musica">
+            <img src="/Musics_Play/imagens/site_abre_don_juan.jpg" alt="Capa Don Juan" class="capa-musica">
+            <div class="info-musica">
+                <p class="titulo-musica">Música 2</p>
+                <p class="artista-musica">MC Don Juan</p>
+            </div>
+            <div class="acoes-musica">
+                <button class="tocar">Tocar</button>
+                <button class="adicionar">+</button>
+            </div>
+        </div>
+
+        <!-- Música 3 -->
+        <div class="musica">
+            <img src="/Musics_Play/imagens/img_Iza.jpg" alt="Capa Iza" class="capa-musica">
+            <div class="info-musica">
+                <p class="titulo-musica">Música 3</p>
+                <p class="artista-musica">Iza</p>
+            </div>
+            <div class="acoes-musica">
+                <button class="tocar">Tocar</button>
+                <button class="adicionar">+</button>
+            </div>
+        </div>
+
+        <!-- Continue com outras músicas... -->
+    </div>
+
+<script src="/Musics_Play/JS/sertanejo.js"></script>
+
 </body>
 </html>
