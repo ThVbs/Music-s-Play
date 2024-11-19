@@ -1,61 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil</title>
-    <link rel="stylesheet" href="/Musics_Play/CSS/sertanejo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Henrique & Juliano</title>
+  <link rel="stylesheet" href="/Musics_Play/CSS/sertanejo.css">
 </head>
 <body>
-    <a href="/Musics_Play/HTML/home.html">
-    <div class="seta"><img src="/Musics_Play/imagens/imagens_cetaVoltar.jpg.png" alt=""></div>
-    </a> 
+   <!-- Barra superior fixa -->
+   <header class="topo-fixo">
     <h1>Sertanejo</h1>
+  </header>
 
-    <div class="playlist">
-        <!-- Música 1 -->
-        <div class="musica">
-            <img src="/Musics_Play/imagens/img_FelipeRet.jpg" alt="Capa Felipe Ret" class="capa-musica">
-            <div class="info-musica">
-                <p class="titulo-musica">Música 1</p>
-                <p class="artista-musica">Felipe Ret</p>
-            </div>
-            <div class="acoes-musica">
-                <button class="tocar">Tocar</button>
-                <button class="adicionar">+</button>
-            </div>
-        </div>
+  <div class="container">
+    <section class="popular-songs">
+      <h2>Populares</h2>
+      <ul>
+        <li data-audio="Henrique e juliano - ÚLTIMA SAUDADE (Manifesto Musical 2) - Henrique e juliano.mp3">
+          <span class="title">Última Saudade - Ao Vivo</span>
+          <span class="artist">Henrique & Juliano</span>
+          <span class="plays">28.490.051</span>     <!--visualizações -->
+          <button class="play-button">▶️</button>
+        </li>
+        <li data-audio="Ana Castela ft. Léo e Raphael - As Menina da Pecuária (Clipe Oficial) - Ana Castela.mp3">
+          <span class="title">As Menina da Pecuária</span>
+          <span class="artist">Ana Castela ft. Léo e Raphael</span>
+          <span class="plays">107.666.511</span>    <!--visualizações -->
+          <button class="play-button">▶️</button>
+        </li>
+        <li data-audio="Marília Mendonça - BEBAÇA feat. Maiara e Maraisa - Marília Mendonça.mp3">
+          <span class="title">Bebaça</span>
+          <span class="artist">Marília Mendonça</span>
+          <span class="plays">281.331.238</span>    <!--visualizações -->
+          <button class="play-button">▶️</button>
+        </li>
+        <li data-audio="Naiara Azevedo Ft. Maiara e Maraisa - 50 Reais - MM MUSIC.mp3">
+          <span class="title">50 Reais</span>
+          <span class="artist">Naiara Azevedo Ft. Maiara e Maraisa</span>
+          <span class="plays">380.995.438</span>    <!--visualizações -->
+          <button class="play-button">▶️</button>
+        </li>
+        <li data-audio="Israel & Rodolffo - Batom De Cereja (Áudio) - Brazuca Hits.mp3">
+          <span class="title">Batom De Cereja</span>
+          <span class="artist">Israel & Rodolffo</span>
+          <span class="plays">459.702.805</span>     <!--visualizações -->
+          <button class="play-button">▶️</button>
+        </li>
+        <li data-audio="Henrique & Diego - Suíte 14 (Ao Vivo) ft. Mc Guimê - HenriqueeDiegoVEVO.mp3">
+            <span class="title">Suíte 14</span>
+            <span class="artist">Henrique & Diego</span>
+             <span class="plays">16.783.306</span>     <!--visualizações -->
+            <button class="play-button">▶️</button>
+          </li>
+      </ul>
+    </section>
+  </div>
 
-        <!-- Música 2 -->
-        <div class="musica">
-            <img src="/Musics_Play/imagens/site_abre_don_juan.jpg" alt="Capa Don Juan" class="capa-musica">
-            <div class="info-musica">
-                <p class="titulo-musica">Música 2</p>
-                <p class="artista-musica">MC Don Juan</p>
-            </div>
-            <div class="acoes-musica">
-                <button class="tocar">Tocar</button>
-                <button class="adicionar">+</button>
-            </div>
-        </div>
+  <!-- Player element -->
+  <audio id="audioPlayer" style="display: none;"></audio>
 
-        <!-- Música 3 -->
-        <div class="musica">
-            <img src="/Musics_Play/imagens/img_Iza.jpg" alt="Capa Iza" class="capa-musica">
-            <div class="info-musica">
-                <p class="titulo-musica">Música 3</p>
-                <p class="artista-musica">Iza</p>
-            </div>
-            <div class="acoes-musica">
-                <button class="tocar">Tocar</button>
-                <button class="adicionar">+</button>
-            </div>
-        </div>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Sertanejo Music`s Play. Todos os direitos reservados.</p>
+  </footer>
 
-        <!-- Continue com outras músicas... -->
-    </div>
-
-<script src="/Musics_Play/JS/sertanejo.js"></script>
-
+  <script src="/Musics_Play/JS/sertanejo.js"></script>
 </body>
 </html>

@@ -1,121 +1,118 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  font-family: 'Arial', sans-serif;
-  background: linear-gradient(to bottom, #092549, black);
+  font-family: Arial, sans-serif;
+  background-color: #121212;
   color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-.seta {
-  position: fixed;
-  left: 10px;
-  top: 10px;
-}
-
-h1 {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: white;
-  font-size: 2.5em;
-  margin: 20px 0;
-}
-
-h2 {
-  font-size: 1.3em;
-  color: #b3b3b3;
-}
-
-h3 {
-  font-size: 1.5em;
-  text-align: justify;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: white;
-}
-
-h5 {
-  text-align: justify;
-  color: #666;
-  font-size: 1.2em;
-  margin: 10px 0;
-}
-
-.p {
-  font-size: 1em;
-  margin: 10px 0;
-}
-
-.playlist {
+  padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
+  height: 100vh; /* Garantir que o corpo ocupe toda a altura da janela */
+  margin: 0; /* Remover margens padrão do body */
 }
 
-.musica {
+.container {
+  flex: 1; /* Isso permite que o conteúdo ocupe o espaço restante da tela */
+  padding: 20px;
+}
+
+footer {
+  background: linear-gradient(to bottom, #092549, black);
+  color: #fff;
+  text-align: center;
+  padding: 20px 15px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.9em;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Barra superior  */
+.topo-fixo {
+  background: linear-gradient(to bottom, #092549, #092549);
+  color: #fff;  /* Cor do texto */
+  position: fixed;  /* Fixa no topo */
+  top: 0;
+  left: 0;
+  width: 100%;  /* Ocupa toda a largura */
+  padding: 10px 10px;  /* Espaçamento interno */
+  display: flex;
+  align-items: center; /* Alinha verticalmente os itens */
+  height: 65px; /* Define uma altura fixa para a barra */
+ 
+}
+
+.container {
+  padding: 20px;
+}
+
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
-  background-color: #2c2c2c;
-  padding: 10px;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  transition: background-color 0.3s ease;
 }
 
-.musica:hover {
-  background-color: #3a3a3a;
+h1 {
+  margin: 0;
+  text-align: center; 
 }
 
-.capa-musica {
-  width: 50px;
-  height: 50px;
-  border-radius: 8px;
-  margin-right: 15px;
+.popular-songs h2 {
+  margin-top: 20px;
 }
 
-.info-musica {
-  flex-grow: 1;
-  text-align: left;
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-.titulo-musica {
-  font-size: 1.1em;
-  font-weight: bold;
-}
-
-.artista-musica {
-  font-size: 1em;
-  color: #bbb;
-}
-
-.acoes-musica {
+li {
   display: flex;
-  gap: 10px;
-}
-
-button {
-  padding: 8px 16px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 5px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #333;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-button:hover {
-  background-color: #45a049;
+li:hover {
+  background-color: #333;
 }
 
-button.adicionar {
-  background-color: #f39c12;
+.title {
+  flex: 2;
 }
 
-button.adicionar:hover {
-  background-color: #e67e22;
+.plays, .duration {
+  flex: 1;
+  text-align: right;
+}
+
+.plays {
+  font-size: 0.8em;
+  margin-top: 10px;
+}
+
+.play-button {
+  margin-top: 10px;
+  background: none;
+  /* border: 1px solid #0073e6; */
+  color: #0073e6;
+  padding: 7px 3px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.play-button:hover {
+  background-color: #0073e6;
+  color: #fff;
+}
+.artist{
+  color: #6b6b6b;
+  font-family: Arial, sans-serif;
+  text-align: center;  /* Alinha o texto no centro */
+  text-align: left; /* Alinha o texto à esquerda */
 }
