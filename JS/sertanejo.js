@@ -1,38 +1,48 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const audioPlayer = document.getElementById('audioPlayer');
-    const songItems = document.querySelectorAll('.popular-songs ul li');
-  
-    songItems.forEach(item => {
-      const playButton = item.querySelector('.play-button');
-      playButton.addEventListener('click', () => {
-        const audioFile = item.getAttribute('data-audio');
-        
-        // Verifica se a música já está tocando
-        if (audioPlayer.src.includes(audioFile) && !audioPlayer.paused) {
-          // Pausar música
+  const audioPlayer = document.getElementById('audioPlayer');
+  const songItems = document.querySelectorAll('.popular-songs ul li');
+  let currentlyPlaying = null; // Para rastrear a música atual
+
+  songItems.forEach(item => {
+    const playButton = item.querySelector('.play-button');
+    playButton.addEventListener('click', () => {
+      const audioFile = item.getAttribute('data-audio');
+      
+      if (currentlyPlaying === item) {
+        // Se a música já estiver tocando, pausar
+        if (!audioPlayer.paused) {
           audioPlayer.pause();
           playButton.textContent = '▶️'; // Volta o botão para play
-          item.classList.remove('playing'); // Remove o destaque da música
+          item.classList.remove('playing'); // Remove o destaque
         } else {
-          // Tocar música
-          audioPlayer.src = `/Musics_Play/MUSICAS/${audioFile}`; // Atualiza a fonte de áudio
+          // Se estava pausada, retomar
           audioPlayer.play();
-          playButton.textContent = '⏸️'; // Muda o botão para pausa
-  
-          // Atualizar o estado visual do botão e destacar a música
-          songItems.forEach(el => {
-            el.querySelector('.play-button').textContent = '▶️'; // Reseta todos os botões para play
-            el.classList.remove('playing'); // Remove o destaque de outras músicas
-          });
-          item.classList.add('playing'); // Adiciona o destaque à música tocando
+          playButton.textContent = '⏸️';
+          item.classList.add('playing');
         }
-  
-        // Resetar o botão quando a música acabar
-        audioPlayer.onended = () => {
-          playButton.textContent = '▶️';
-          item.classList.remove('playing');
-        };
-      });
+      } else {
+        // Tocar uma nova música
+        if (currentlyPlaying) {
+          // Resetar estado da música anterior
+          currentlyPlaying.querySelector('.play-button').textContent = '▶️';
+          currentlyPlaying.classList.remove('playing');
+        }
+
+        // Atualizar para a nova música
+        currentlyPlaying = item;
+        audioPlayer.src = `/Musics_Play/MUSICAS/${audioFile}`;
+        audioPlayer.play();
+        playButton.textContent = '⏸️';
+        item.classList.add('playing');
+      }
+
+      // Resetar o botão quando a música acabar
+      audioPlayer.onended = () => {
+        playButton.textContent = '▶️';
+        item.classList.remove('playing');
+        currentlyPlaying = null; // Resetar a música atual
+      };
     });
   });
-  
+});
+
