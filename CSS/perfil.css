@@ -13,12 +13,18 @@ body {
 }
 
 
-.seta{
+/* Ajuste para a seta de voltar */
+.seta {
     position: fixed;
-    left: 10px;    /* distância do lado esquerdo */
-    top: 10px;     /* distância do topo */
-}
-
+    top: 15px;
+    left: 20px;
+    z-index: 15;
+  }
+  
+  .seta img {
+    width: 30px; /* Ajuste o tamanho da seta */
+    height: auto;
+  }
 
 h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;

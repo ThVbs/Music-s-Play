@@ -3,13 +3,13 @@ const musicList = [
     {
         title: "Bom",
         artist: "Ludmilla",
-        src: "/Musics_Play/MUSICAS/MACETANDO AUDIO- LUDMILLA.mp3",
+        src: "/Musics_Play/MUSICAS/BOM AUDIO- LUDMILLA.mp3",
         albumArt: "/Musics_Play/imagens/Ludmilla_-_Bom.jpg"
     },
 
     {
         title: "Macetando",
-        artist: "Ludmilla",
+        artist: "Ludmilla", 
         src: "/Musics_Play/MUSICAS/MACETANDO AUDIO- LUDMILLA.mp3",
         albumArt: "/Musics_Play/imagens/macetando macetando.png"
     },

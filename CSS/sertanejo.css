@@ -5,12 +5,12 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
-  height: 100vh; /* Garantir que o corpo ocupe toda a altura da janela */
-  margin: 0; /* Remover margens padrão do body */
+  height: 100vh;
+  margin: 0;
 }
 
 .container {
-  flex: 1; /* Isso permite que o conteúdo ocupe o espaço restante da tela */
+  flex: 1;
   padding: 20px;
 }
 
@@ -29,36 +29,43 @@ footer p {
   margin: 0;
 }
 
-/* Barra superior  */
+/* Barra superior fixa */
 .topo-fixo {
   background: linear-gradient(to bottom, #092549, #092549);
-  color: #fff;  /* Cor do texto */
-  position: fixed;  /* Fixa no topo */
+  color: #fff;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;  /* Ocupa toda a largura */
-  padding: 10px 10px;  /* Espaçamento interno */
+  width: 100%;
+  padding: 10px 20px;  /* Ajuste do padding para o header */
   display: flex;
-  align-items: center; /* Alinha verticalmente os itens */
-  height: 65px; /* Define uma altura fixa para a barra */
- 
-}
-
-.container {
-  padding: 20px;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  height: 65px;
+  z-index: 10;
 }
 
 h1 {
   margin: 0;
-  text-align: center; 
+  text-align: center;
+  font-size: 2em; /* Ajuste o tamanho da fonte conforme necessário */
+  font-weight: bold;
 }
 
+/* Ajuste para a seta de voltar */
+.seta {
+  position: fixed;
+  top: 15px;
+  left: 20px;
+  z-index: 15;
+}
+
+.seta img {
+  width: 50px; /* Ajuste o tamanho da seta */
+  height: auto;
+}
+
+/* Estilo para as músicas */
 .popular-songs h2 {
   margin-top: 20px;
 }
@@ -98,7 +105,6 @@ li:hover {
 .play-button {
   margin-top: 10px;
   background: none;
-  /* border: 1px solid #0073e6; */
   color: #0073e6;
   padding: 7px 3px;
   cursor: pointer;
@@ -110,9 +116,9 @@ li:hover {
   background-color: #0073e6;
   color: #fff;
 }
-.artist{
+
+.artist {
   color: #6b6b6b;
   font-family: Arial, sans-serif;
-  text-align: center;  /* Alinha o texto no centro */
-  text-align: left; /* Alinha o texto à esquerda */
+  text-align: left;
 }
