@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,35 +8,40 @@
 </head>
 <body>
 
-    <div class="lateral">
-        <a href="/Musics_Play/HTML/luisazonza.html" class="icon">
-            <img src="/Musics_Play/imagens/img_LuisaSonza.jpg" alt="">
-        </a>
-        
-        <a href="/Musics_Play/HTML/home.html" class="icon"><i class="fas fa-user"></i>
-            <img src="/Musics_Play/imagens/ima_casinha.jpg.png" alt="">
-        </a>
+    <div class="player-container">
+        <!-- Arte do álbum -->
+        <div class="album-art">
+            <img src="/Musics_Play/imagens/img_Anitta_-_Combatchy.jpg" alt="Album Art" id="albumArt">
+        </div>
+
+        <div class="lateral">
+            <a href="/Musics_Play/HTML/home.html" class="icon"><i class="fas fa-user"></i>
+                <img src="/Musics_Play/imagens/ima_casinha.jpg.png" alt="">
+            </a>
+
+            <a href="/Musics_Play/HTML/luisazonza.html" class="icon">
+                <img src="/Musics_Play/imagens/img_luiza sonza.jpg" alt="">
+            </a>
+        </div>
+
+        <!-- Informações da música -->
+        <div class="song-info">
+            <h2 id="songTitle">Combath</h2>
+            <h4 id="songArtist">Luísa Sonza</h4>
+        </div>
+
+        <!-- Player de áudio -->
+        <audio id="audioPlayer" controls>
+            <source id="audioSource" src="/Musics_Play/MUSICAS/" type="audio/mpeg">
+        </audio>
+
+        <!-- Botões de navegação -->
+        <div class="navigation">
+            <button id="previousBtn" class="nav-btn">Anterior</button>
+            <button id="nextBtn" class="nav-btn">Próxima</button>
+        </div>
     </div>
-    <!-- <div id="conteiner"> -->
-        <div id="conteiner-music">
-            <div class="album-art">
-                <video id="music-video" width="100%" controls autoplay>
-                    <source src="/Musics_Play/MUSICAS/Anitta, Lexa, Luisa Sonza feat. MC Rebecca - Combatchy [Official Music Video].mp4" type="video/mp4">
 
-                    <div class="user-icon">
-                        <i class="fas fa-user"></i>
-                    </div>
-            </div>
-            <!-- <div class="song-info"> -->
-                <br>
-                <h2>Combatchy - Luísa Sonza</h2>
-            </div>
-        <!-- </div> -->
-
-    <!-- </div> -->
-
-    <script src="/Musics_Play/JS/reproducao.js" type="audio/mpeg"></script>
-
+    <script src="/Musics_Play/JS/combath.js"></script>
 </body>
-
 </html>

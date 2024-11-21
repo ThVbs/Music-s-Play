@@ -1,3 +1,4 @@
+/* Reseta alguns estilos padrão */
 * {
     margin: 0;
     padding: 0;
@@ -5,153 +6,137 @@
 }
 
 body {
-    font-style: italic;
+    font-family: Arial, sans-serif;
     background: linear-gradient(to bottom, #092549, black);
-    color: black;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;  /* altura minima */
+    min-height: 100vh;
     margin: 0;
-    padding: 0;
 }
 
-.album-art img{
-    width: 300px;
-    height: 300px;
+/* Container principal do player */
+.player-container {
+    background-color: #1d1d1d;
+    width: 350px;
+    padding: 50px;
     border-radius: 10px;
-    margin-top: -20px;
-}
-
-.progress-container{
-    width: 200%;
-    background: #ddd;
-    border-radius: 5px;
-    margin: 20px 0;  
-}
-
-.conteiner-player{
-        background-color: #acacaca9;
-        border-radius: 20px;
-        padding: 20px;
-        max-width: 400px;
-        margin-left: auto;
-        position: relative; /* Para manter o contexto do posicionamento absoluto */
-        float: left; /* Faz o contêiner flutuar à esquerda */
-        margin-top: 20px;
-}
-
-.song-info{
-    width: 300px;
-}
-
-h2{
-    margin-bottom: 5px;
-    color: white;
+    box-shadow: 0 5px 15px rgb(10, 10, 116);
     text-align: center;
-    margin-top: -20px;
-}
-
-h4{
-    color: white;
-}
-
-.duracao{
-    width: 300px; 
-    margin-top: 25px;
-}
-
-.barra{
-    width: 300px;
-    height: 6px;
-    border: 10px solid #fffefe;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;  /* empurrar para a esquerda so pode usar se o display for flex */
-}
-
-.botoes{
-    width: 300px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 15px;
-}
-    
-.play_musica{
-    gap: 10px;
-}
-
-.play_musica img {
-    width: 50px; 
-    height: auto; 
-    transition: transform 0.3s;
-}
-
-.play_musica img:hover{
-    cursor: pointer;
-}
-
-.next{
-    font-size: 40px;
-    cursor: pointer;
-}
-
-
-.controls{
-    justify-content: center;
-    margin-bottom: 20px;
-    gap: 10px;
-}
-
-.up-next{
-    text-align: center;
-}
-
-.icon {
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-size: 24px;
-    transition: background-color 0.3s; 
+    align-items: center;
 }
 
-.icon img {
-    width: 50px; 
-    height: 50px; 
-    border-radius: 50%;
-    margin-bottom: 5px; 
-} 
-
-.lateral{
-    margin-left: -1150px;
-    margin-top: -20px;
-}
-
-.icon:hover {
-    background-color: rgba(255, 255, 255, 0.1); 
-    border-radius: 10px; 
-    padding: 5px; 
-}
-
-input[type="range"] {
-    width: 100%;
-    background: #ffffff;
-    border-radius: 5px;
-}
-
-.up-next {
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-    margin-top: 20px;
-}
-
-.controls{
-    justify-content: center; 
-    gap: 10px;
+/* Arte do álbum */
+.album-art {
     margin-bottom: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+}
+
+.album-art img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Informações da música */
+.song-info {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.song-info h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.song-info h4 {
+    font-size: 14px;
+    font-weight: normal;
+    color: #bbb;
+}
+
+/* Player de áudio */
+audio {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Botões de navegação */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #555;
+}
+
+.nav-btn:active {
+    background-color: #888;
+}
+
+/* Responsividade */
+@media (max-width: 400px) {
+    .player-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .album-art {
+        width: 120px;
+        height: 120px;
+    }
+
+    .song-info h2 {
+        font-size: 16px;
+    }
+
+    .song-info h4 {
+        font-size: 12px;
+    }
+
+    .nav-btn {
+        padding: 8px 15px;
+    }
+}
+
+/* Lateral com ícones */
+.lateral {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.lateral .icon {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.lateral .icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
