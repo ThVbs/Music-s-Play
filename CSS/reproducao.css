@@ -18,8 +18,8 @@ body {
 /* Container principal do player */
 .player-container {
     background-color: #1d1d1d;
-    width: 350px;
-    padding: 50px;
+    width: 400px;
+    padding: 100px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgb(10, 10, 116);
     text-align: center;

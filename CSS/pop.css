@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  footer {
+    background: linear-gradient(to bottom, #092549, black);
+    color: #fff;
+    text-align: center;
+    padding: 20px 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Barra superior fixa */
+  .topo-fixo {
+    background: linear-gradient(to bottom, #092549, #092549);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;  /* Ajuste do padding para o header */
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    height: 65px;
+    z-index: 10;
+  }
+  
+  h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 2em; /* Ajuste o tamanho da fonte conforme necessário */
+    font-weight: bold;
+  }
+  
+  /* Ajuste para a seta de voltar */
+  .seta {
+    position: fixed;
+    top: 15px;
+    left: 20px;
+    z-index: 15;
+  }
+  
+  .seta img {
+    width: 30px; /* Ajuste o tamanho da seta */
+    height: auto;
+  }
+  
+  /* Estilo para as músicas */
+  .popular-songs h2 {
+    margin-top: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+    cursor: pointer;
+  }
+  
+  li:hover {
+    background-color: #333;
+  }
+  
+  .title {
+    flex: 2;
+  }
+  
+  .plays, .duration {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .plays {
+    font-size: 0.8em;
+    margin-top: 10px;
+  }
+  
+  .play-button {
+    margin-top: 10px;
+    background: none;
+    color: #0073e6;
+    padding: 7px 3px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .play-button:hover {
+    background-color: #0073e6;
+    color: #fff;
+  }
+  
+  .artist {
+    color: #6b6b6b;
+    font-family: Arial, sans-serif;
+    text-align: left;
+  }
+  
