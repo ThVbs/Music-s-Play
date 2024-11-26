@@ -9,7 +9,7 @@ body {
   margin: 0;
 }
 
-.container {
+.container { 
   flex: 1;
   padding: 20px;
 }
@@ -48,9 +48,15 @@ footer p {
 h1 {
   margin: 0;
   text-align: center;
-  font-size: 2em; /* Ajuste o tamanho da fonte conforme necessário */
+  font-size: 3.4em; /* Ajuste o tamanho da fonte conforme necessário */
   font-weight: bold;
-}
+  margin-left: -50px;
+  margin-top: 5px;
+  font-family: "Abril Fatface", serif;
+  font-weight: 200;
+  font-style: normal;
+  }
+  
 
 /* Ajuste para a seta de voltar */
 .seta {
@@ -61,7 +67,7 @@ h1 {
 }
 
 .seta img {
-  width: 30px; /* Ajuste o tamanho da seta */
+  width: 50px; /* Ajuste o tamanho da seta */
   height: auto;
 }
 
@@ -82,6 +88,7 @@ li {
   padding: 10px 0;
   border-bottom: 1px solid #333;
   cursor: pointer;
+  margin-top: 20px;
 }
 
 li:hover {
@@ -90,6 +97,7 @@ li:hover {
 
 .title {
   flex: 2;
+  font-weight: bold;
 }
 
 .plays, .duration {
@@ -105,7 +113,7 @@ li:hover {
 .play-button {
   margin-top: 10px;
   background: none;
-  color: #0073e6;
+  color: #28dac2;
   padding: 7px 3px;
   cursor: pointer;
   border-radius: 5px;
@@ -113,12 +121,29 @@ li:hover {
 }
 
 .play-button:hover {
-  background-color: #0073e6;
+  background-color: #2cd478;
   color: #fff;
 }
 
 .artist {
   color: #6b6b6b;
   font-family: Arial, sans-serif;
-  text-align: left;
+  /* text-align: left; */
+  margin-top: 50px;
+  margin-left: -190px;
+}
+
+.song-info {
+  display: flex;
+  flex-direction: row; 
+  align-items: center;  
+}
+
+.capa-musica {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  margin-right: 15px;
+  object-fit: cover; 
+  margin-top: 20px;
 }
