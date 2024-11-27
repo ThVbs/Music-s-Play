@@ -8,11 +8,11 @@ body {
   height: 100vh;
   margin: 0;
 }
-
+ 
 .container { 
   flex: 1;
   padding: 20px;
-}
+} 
 
 footer {
   background: linear-gradient(to bottom, #092549, black);
@@ -48,11 +48,15 @@ footer p {
 h1 {
   margin: 0;
   text-align: center;
-  font-size: 2.5em; /* Ajuste o tamanho da fonte conforme necessário */
+  font-size: 3.4em; /* Ajuste o tamanho da fonte conforme necessário */
   font-weight: bold;
-  margin-left: -100px;
-  margin-top: 20px;
-}
+  margin-left: -50px;
+  margin-top: 5px;
+  font-family: "Abril Fatface", serif;
+  font-weight: 200;
+  font-style: normal;
+  }
+  
 
 /* Ajuste para a seta de voltar */
 .seta {
@@ -93,6 +97,7 @@ li:hover {
 
 .title {
   flex: 2;
+  font-weight: bold;
 }
 
 .plays, .duration {
@@ -120,8 +125,73 @@ li:hover {
   color: #fff;
 }
 
-.artist {
+.artist1 {
   color: #6b6b6b;
   font-family: Arial, sans-serif;
-  text-align: left;
+  /* text-align: left; */
+  margin-top: 50px;
+  margin-left: -95px;
+}
+
+.artist2 {
+  color: #6b6b6b;
+  font-family: Arial, sans-serif;
+  /* text-align: left; */
+  margin-top: 50px;
+  margin-left: -50px;
+}
+
+.artist3 {
+  color: #6b6b6b;
+  font-family: Arial, sans-serif;
+  /* text-align: left; */
+  margin-top: 50px;
+  margin-left: -95px;
+}
+
+.artist4 {
+  color: #6b6b6b;
+  font-family: Arial, sans-serif;
+  /* text-align: left; */
+  margin-top: 50px;
+  margin-left: -75px;
+}
+
+.artist5 {
+  color: #6b6b6b;
+  font-family: Arial, sans-serif;
+  /* text-align: left; */
+  margin-top: 50px;
+  margin-left: -75px;
+}
+
+.artist6 {
+  color: #6b6b6b;
+  font-family: Arial, sans-serif;
+  /* text-align: left; */
+  margin-top: 50px;
+  margin-left: -145px;
+}
+
+.artist7 {
+  color: #6b6b6b;
+  font-family: Arial, sans-serif;
+  /* text-align: left; */
+  margin-top: 50px;
+  margin-left: -130px;
+}
+
+.song-info {
+  display: flex;
+  flex-direction: row; 
+  align-items: center;  
+}
+
+.capa-musica {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  margin-right: 15px;
+  object-fit: cover; 
+  margin-top: 20px;
 }

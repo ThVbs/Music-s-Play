@@ -8,11 +8,11 @@ body {
   height: 100vh;
   margin: 0;
 }
-
+ 
 .container { 
   flex: 1;
   padding: 20px;
-}
+} 
 
 footer {
   background: linear-gradient(to bottom, #092549, black);
@@ -125,12 +125,60 @@ li:hover {
   color: #fff;
 }
 
-.artist {
+.artist1 {
   color: #6b6b6b;
   font-family: Arial, sans-serif;
   /* text-align: left; */
   margin-top: 50px;
   margin-left: -190px;
+}
+
+.artist2 {
+  color: #6b6b6b;
+  font-family: Arial, sans-serif;
+  /* text-align: left; */
+  margin-top: 50px;
+  margin-left: -180px;
+}
+
+.artist3 {
+  color: #6b6b6b;
+  font-family: Arial, sans-serif;
+  /* text-align: left; */
+  margin-top: 50px;
+  margin-left: -60px;
+}
+
+.artist4 {
+  color: #6b6b6b;
+  font-family: Arial, sans-serif;
+  /* text-align: left; */
+  margin-top: 50px;
+  margin-left: -70px;
+}
+
+.artist5 {
+  color: #6b6b6b;
+  font-family: Arial, sans-serif;
+  /* text-align: left; */
+  margin-top: 50px;
+  margin-left: -130px;
+}
+
+.artist6 {
+  color: #6b6b6b;
+  font-family: Arial, sans-serif;
+  /* text-align: left; */
+  margin-top: 50px;
+  margin-left: -60px;
+}
+
+.artist7 {
+  color: #6b6b6b;
+  font-family: Arial, sans-serif;
+  /* text-align: left; */
+  margin-top: 50px;
+  margin-left: -110px;
 }
 
 .song-info {
