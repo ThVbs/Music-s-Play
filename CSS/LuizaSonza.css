@@ -32,7 +32,6 @@ h3 {
     color: #666;
 }
 
-
 .playlists {
     display: flex;
     justify-content: space-around;
@@ -58,19 +57,3 @@ h3 {
     color: white;
     margin-top: 10px;
 }
-
-/* @media (max-width: 768px) {
-    .playlists {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .container-artist {
-        width: 100%;
-    }
-
-    .imagem-redonda {
-        width: 120px;
-        height: 120px;
-    }
-} */

@@ -14,7 +14,7 @@ body {
     min-height: 100vh;
     margin: 0;
 }
-
+ 
 /* Container principal do player */
 .player-container {
     background-color: #1d1d1d;
@@ -64,7 +64,7 @@ body {
 
 /* Player de áudio */
 audio {
-    width: 100%;
+    width: 150%;
     margin-bottom: 20px;
 }
 
@@ -120,7 +120,7 @@ audio {
 }
 
 .lateral{
-    margin-left: -1150px;
-    margin-top: -105px;
+    margin-left: -1290px;
+    margin-top: -140px;
     position: fixed;
 }

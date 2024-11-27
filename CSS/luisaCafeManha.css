@@ -140,3 +140,8 @@ audio {
     border-radius: 50%;
     margin-right: 10px;
 }
+
+audio {
+    width: 130%;
+    margin-bottom: 20px;
+}

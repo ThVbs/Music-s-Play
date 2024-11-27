@@ -72,7 +72,7 @@ audio {
 .navigation {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 80%; 
 }
 
 .nav-btn {
@@ -139,4 +139,9 @@ audio {
     height: 50px;
     border-radius: 50%;
     margin-right: 10px;
+}
+
+audio {
+    width: 130%;
+    margin-bottom: 20px;
 }

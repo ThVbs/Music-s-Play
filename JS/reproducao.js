@@ -33,7 +33,7 @@ const musicList = [
         artist: "Cardi B",
         src: "/Musics_Play/MUSICAS/cardi b up.mp3",
         albumArt: "/Musics_Play/imagens/UP REPRODUÇÃO.jfif"
-    },
+    }, 
 
     {
         title: "Wap",
