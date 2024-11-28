@@ -24,7 +24,12 @@ h1 {
 h2{
     text-align: center; 
     color: white;
-    font-size: 1.7em;
+    font-size: 1.9em;
+
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
 
 
