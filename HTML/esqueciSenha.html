@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap" rel="stylesheet">
-  
 
     <!-- Ícone de música-->
     <link rel="icon" href="imagens/img_music.esqueciSenha.jpg" type="image/png">
@@ -20,21 +19,22 @@
             <h1>Queens Music</h1>
             <p class="description">Esqueceu sua senha?</p>
 
-
             <!-- Formulário para redefinir a senha -->
-            <form action="/enviar-instrucoes-senha" method="post">
-                <label for="email"> Digite sua nova senha:</label>
-                <input type="password" name="password" id="password" placeholder="Sua nova senha" required>
-                <input type="password" name="password" id="password" placeholder="Confirme sua senha" required>
+            <form id="redefinirSenhaForm">
+                <label for="novaSenha">Digite sua nova senha:</label>
+                <input type="password" id="novaSenha" placeholder="Sua nova senha" required>
+                <input type="password" id="confirmarSenha" placeholder="Confirme sua nova senha" required>
                
-                <button type="button" id="botaoAcessarLogin" onclick="window.location.href='login.html';">Acessar Login</button>
+                <a href="/Musics_Play/HTML/login.html">
+                <button type="button" id="botaoAcessarLogin" onclick="salvarNovaSenha()">Salvar Nova Senha</button>
+            </a>
                 <br>
                 <br>
             </form>
         </div>
     </div>
 
-<script class="script.js"></script>
+<script src="/Musics_Play/JS/esqueciSenha.js"></script>
 
 </body>
 </html>

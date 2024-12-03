@@ -50,12 +50,41 @@ const musicList = [
     },
 
     {
-        title: "Saveiro",
-        artist: "Kaique e Felipe",
-        src: "/Musics_Play/MUSICAS/saveiro.mp3",
-        albumArt: "/Musics_Play/imagens/SAVEIRO LUAN.png"
+        title: "Downtown",
+        artist: "Anitta",
+        src: "/Musics_Play/MUSICAS/Anitta & J Balvin - Downtown [Official Music Video].mp3",
+        albumArt: "/Musics_Play/imagens/anitta e j.jpeg"
+    },
+
+    {
+        title: "Malvadinho",
+        artist: "Mc Luuky",
+        src: "/Musics_Play/MUSICAS/Malvadinho.mp3",
+        albumArt: "/Musics_Play/imagens/malvadinho fotoooo.jpg"
+    },
+
+    {
+        title: "VIP",
+        artist: "Luísa Sonza",
+        src: "/Musics_Play/MUSICAS/Luísa Sonza, 6LACK - VIP _-_ (Letra_Lyrics).mp3",
+        albumArt: "/Musics_Play/imagens/vip luisa.png"
+    },
+
+    {
+        title: "De Ladin",
+        artist: "Dream Team do Passinho",
+        src: "/Musics_Play/MUSICAS/Dream Team do Passinho - De Ladin.mp3",
+        albumArt: "/Musics_Play/imagens/de ladinnn.jpg"
+    },
+
+    {
+        title: "Not My Fault",
+        artist: "Reneé Rapp",
+        src: "/Musics_Play/MUSICAS/Reneé Rapp, Megan Thee Stallion - Not My Fault (Official Lyric Video).mp3",
+        albumArt: "/Musics_Play/imagens/not my fault.jpg"
     },
 ];
+
 
 // Controle da música atual
 let currentMusicIndex = 0;

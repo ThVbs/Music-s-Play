@@ -1,25 +1,26 @@
-document.getElementById("loginForm").addEventListener("submit", async function(event) {
+document.getElementById('loginForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
+    // Recupera os dados inseridos no login
+    const email = document.getElementById('usuario').value;
+    const senha = document.getElementById('senha').value;
 
-    // Enviar uma requisição POST para o backend
-    const response = await fetch('http://localhost:5000/api/auth/login', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ username, password })
-    });
+    // Recupera a lista de usuários cadastrados do localStorage
+    const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
 
-    const result = await response.json();
+    // Verifica se o usuário existe
+    const usuario = usuarios.find(usuario => usuario.email === email);
 
-    if (response.ok) {
-        alert('Login bem-sucedido!');
-        localStorage.setItem('token', result.token); // Armazenar o token
-        window.location.href = '/home'; // Redirecionar para a página inicial
+    if (!usuario) {
+        alert("Usuário não encontrado.");
+        return;
+    }
+
+    // Verifica se a senha está correta
+    if (usuario.senha === senha) {
+        alert("Login bem-sucedido!");
+        window.location.href = "/Musics_Play/HTML/home.html"; // Redireciona para a página inicial
     } else {
-        alert(result.message);
+        alert("Senha incorreta!");
     }
 });

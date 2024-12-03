@@ -1,38 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title> 
+    <title>Cadastro - Queens Music</title>
     <link rel="stylesheet" href="/Musics_Play/CSS/cadastro.css">
     <link rel="icon" href="imagens/img_music.esqueciSenha.jpg" type="image/png">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <div class="conteiner-inscricao">
         <h1>Queens Music</h1>
-        <h2>Efetuar Cadastro</h2> 
+        <h2>Efetuar Cadastro</h2>
         <br>
         <div class="conteiner-box">
-        <p>Digite seus dados para se cadastrar na plataforma</p>
-        <br><br>
-        <form action="/Musics_Play/HTML/cadastro.html" method="post" id="formCadastro">
-            <input type="text" name="nome" placeholder="Nome" required>
-            <input type="text" name="Sobrenome" placeholder="Sobrenome" required>
-            <input type="date" name="Data de nascimento dd/mm/aaaa" placeholder="Data de nascimento dd/mm/aaaa" required>
-            <input type="text" name="CPF" placeholder="CPF" maxlength="11" pattern="\d{11}" required>
-            <input type="email" name="email" placeholder="E-mail" required>
-            <input type="email" name="confirmar_email" placeholder="Confirma e-mail" required>
-            <input type="password" name="senha" placeholder="Senha" required>
-            <input type="password" name="confirmar_senha" placeholder="Confirma Senha" required>
+            <p>Digite seus dados para se cadastrar na plataforma</p>
             <br><br>
-            <button type="button" id="botaoBranco" onclick="window.location.href='/Musics_Play/HTML/login.html';">Cancelar</button>
-            <button type="submit" id="botaoVerde">Acessar</button>
-        </form>
+            <form id="formCadastro">
+                <input type="text" id="nome" placeholder="Nome" required>
+                <input type="text" id="sobrenome" placeholder="Sobrenome" required>
+                <input type="date" id="dataNascimento" placeholder="Data de nascimento dd/mm/aaaa" required>
+                <input type="text" id="cpf" placeholder="CPF" maxlength="11" pattern="\d{11}" required>
+                <input type="email" id="email" placeholder="E-mail" required>
+                <input type="email" id="confirmarEmail" placeholder="Confirma e-mail" required>
+                <input type="password" id="senha" placeholder="Senha" required>
+                <input type="password" id="confirmarSenha" placeholder="Confirma Senha" required>
+                <br><br>
+                <button type="button" id="botaoBranco" onclick="window.location.href='/Musics_Play/HTML/login.html';">Cancelar</button>
+                <button type="button" id="botaoVerde" onclick="cadastrar()">Cadastrar</button>
+            </form>
         </div>
     </div>
     
